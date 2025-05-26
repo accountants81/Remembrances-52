@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useParams } from 'next/navigation';
@@ -7,11 +8,11 @@ import type { Supplication, AdhkarCategory } from '@/data/types';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ArrowRightCircle, Info } from 'lucide-react'; // Using ArrowRightCircle for back button
+import { ArrowRightCircle, Info } from 'lucide-react';
 
 export default function AdhkarCategoryPage() {
   const params = useParams();
-  const categoryId = typeof params.category === 'string' ? params.category : '';
+  const categoryId = typeof params.category === 'string' ? params.category : Array.isArray(params.category) ? params.category[0] : '';
   
   const category: AdhkarCategory | undefined = getCategoryById(categoryId);
   const supplications: Supplication[] = getSupplicationsByCategory(categoryId);
@@ -24,7 +25,7 @@ export default function AdhkarCategoryPage() {
             <CardTitle className="text-destructive">قسم غير موجود</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4">عفواً، القسم الذي تبحث عنه غير موجود.</p>
+            <p className="mb-4">عفواً، القسم الذي تبحث عنه ({categoryId}) غير موجود. الرجاء التأكد من الرابط أو العودة للرئيسية.</p>
             <Button asChild>
               <Link href="/">العودة إلى الرئيسية</Link>
             </Button>
@@ -34,7 +35,8 @@ export default function AdhkarCategoryPage() {
     );
   }
 
-  const generalAdvice = {
+  // General advice for specific categories
+  const generalAdvice: { [key: string]: string[] } = {
     deceased_dua: [
       "يُستحب قراءة القرآن (مثل سورة الفاتحة، الإخلاص، الفلق، الناس، آية الكرسي) وإهداء ثوابها للميت، والدعاء له بعدها."
     ],
@@ -46,7 +48,6 @@ export default function AdhkarCategoryPage() {
   };
   
   const adviceForCategory = generalAdvice[categoryId as keyof typeof generalAdvice];
-
 
   return (
     <section className="py-8">

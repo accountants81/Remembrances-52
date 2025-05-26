@@ -1,3 +1,4 @@
+
 import type {Metadata} from 'next';
 import { Noto_Kufi_Arabic } from 'next/font/google';
 import './globals.css';
@@ -14,7 +15,7 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: 'روضة الذكر - Garden of Remembrance',
+  title: 'نَجَاتُكَ بِيَدِكَ - Garden of Remembrance',
   description: 'موقع إسلامي شامل للأذكار والأدعية اليومية والفوائد الإسلامية. نجاتك بيدك نحو حياة أكثر طمأنينة وقرباً من الله.',
   verification: {
     google: "erc3DhRH1Zx4lamgfNDwou_YZxbsSIYgVBByQy9YDZA",
@@ -27,7 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl">
+    // Enforcing dark theme globally via html class
+    <html lang="ar" dir="rtl" className="dark">
       <body className={`${notoKufiArabic.variable} font-sans antialiased flex flex-col min-h-screen`}>
         <AppProviders>
           <SiteHeader />

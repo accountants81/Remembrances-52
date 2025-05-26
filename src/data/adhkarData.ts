@@ -38,7 +38,7 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_la_ilaha_illallah_100',
     categoryKey: 'morning_adhkar',
     arabicText: "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
-    repetition: "مائة مرة",
+    repetition: "100 مرة",
     targetCount: 100,
     source: "متفق عليه"
   },
@@ -62,7 +62,7 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_aafini_badani',
     categoryKey: 'morning_adhkar',
     arabicText: "اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لاَ إِلَهَ إِلاَّ أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لاَ إِلَهَ إِلاَّ أَنْتَ.",
-    repetition: "ثلاث مرات",
+    repetition: "3 مرات",
     targetCount: 3,
     source: "سنن أبي داود"
   },
@@ -70,7 +70,7 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_bismillah_alladhi_la_yadurr',
     categoryKey: 'morning_adhkar',
     arabicText: "بِسْمِ اللَّهِ الَّذِي لاَ يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الأَرْضِ وَلاَ فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ.",
-    repetition: "ثلاث مرات",
+    repetition: "3 مرات",
     targetCount: 3,
     source: "سنن الترمذي"
   },
@@ -78,8 +78,8 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_subhanallah_alhamdulillah_allahuakbar_100',
     categoryKey: 'morning_adhkar',
     arabicText: "سُبْحَانَ اللَّهِ، الْحَمْدُ لِلَّهِ، اللَّهُ أَكْبَرُ.",
-    repetition: "مائة مرة لكل ذكر",
-    targetCount: 100,
+    repetition: "100 مرة لكل ذكر",
+    targetCount: 100, // This implies counting each part separately, or 300 total. For simplicity, keeping it as a single entry counted 100 times.
     source: "أذكار الصباح"
   },
   {
@@ -94,7 +94,7 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_ikhlas',
     categoryKey: 'morning_adhkar',
     arabicText: "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم قُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ.",
-    repetition: "ثلاث مرات",
+    repetition: "3 مرات",
     targetCount: 3,
     source: "القرآن الكريم - سورة الإخلاص"
   },
@@ -102,7 +102,7 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_falaq',
     categoryKey: 'morning_adhkar',
     arabicText: "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ.",
-    repetition: "ثلاث مرات",
+    repetition: "3 مرات",
     targetCount: 3,
     source: "القرآن الكريم - سورة الفلق"
   },
@@ -110,7 +110,7 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_nas',
     categoryKey: 'morning_adhkar',
     arabicText: "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ، مَلِكِ ٱلنَّاسِ، إِلَٰهِ ٱلنَّاسِ، مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ، ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ، مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ.",
-    repetition: "ثلاث مرات",
+    repetition: "3 مرات",
     targetCount: 3,
     source: "القرآن الكريم - سورة الناس"
   },
@@ -118,7 +118,7 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_raditu_billahi_rabban',
     categoryKey: 'morning_adhkar',
     arabicText: "رَضِيتُ بِاللَّهِ رَبًّا، وَبِالإِسْلاَمِ دِينًا، وَبِمُحَمَّدٍ صلى الله عليه وسلم نَبِيًّا.",
-    repetition: "مرة واحدة (أو ثلاث مرات في بعض الروايات)", // Adjusted based on request
+    repetition: "مرة واحدة",
     targetCount: 1,
     source: "سنن أبي داود"
   },
@@ -134,7 +134,7 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_subhanallah_bihamdihi_adada_khalqihi',
     categoryKey: 'morning_adhkar',
     arabicText: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ: عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ.",
-    repetition: "مرة واحدة (أو ثلاث مرات في بعض الروايات)", // Adjusted based on request
+    repetition: "مرة واحدة",
     targetCount: 1,
     source: "صحيح مسلم"
   },
@@ -142,7 +142,7 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_astaghfirullah_100',
     categoryKey: 'morning_adhkar',
     arabicText: "أَسْتَغْفِرُ اللَّهَ.",
-    repetition: "مائة مرة",
+    repetition: "100 مرة",
     targetCount: 100,
     source: "صحيح البخاري"
   }
@@ -185,7 +185,7 @@ const eveningAdhkarSupplications: Supplication[] = [
     id: 'evening_la_ilaha_illallah_100',
     categoryKey: 'evening_adhkar',
     arabicText: "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
-    repetition: "مائة مرة",
+    repetition: "100 مرة",
     targetCount: 100,
     source: "متفق عليه"
   },
@@ -209,7 +209,7 @@ const eveningAdhkarSupplications: Supplication[] = [
     id: 'evening_aafini_badani',
     categoryKey: 'evening_adhkar',
     arabicText: "اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لاَ إِلَهَ إِلاَّ أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لاَ إِلَهَ إِلاَّ أَنْتَ.",
-    repetition: "ثلاث مرات",
+    repetition: "3 مرات",
     targetCount: 3,
     source: "سنن أبي داود"
   },
@@ -217,7 +217,7 @@ const eveningAdhkarSupplications: Supplication[] = [
     id: 'evening_bismillah_alladhi_la_yadurr',
     categoryKey: 'evening_adhkar',
     arabicText: "بِسْمِ اللَّهِ الَّذِي لاَ يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الأَرْضِ وَلاَ فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ.",
-    repetition: "ثلاث مرات",
+    repetition: "3 مرات",
     targetCount: 3,
     source: "سنن الترمذي"
   },
@@ -225,7 +225,7 @@ const eveningAdhkarSupplications: Supplication[] = [
     id: 'evening_subhanallah_alhamdulillah_allahuakbar_100',
     categoryKey: 'evening_adhkar',
     arabicText: "سُبْحَانَ اللَّهِ، الْحَمْدُ لِلَّهِ، اللَّهُ أَكْبَرُ.",
-    repetition: "مائة مرة لكل ذكر",
+    repetition: "100 مرة لكل ذكر",
     targetCount: 100,
     source: "أذكار المساء"
   },
@@ -241,7 +241,7 @@ const eveningAdhkarSupplications: Supplication[] = [
     id: 'evening_ikhlas',
     categoryKey: 'evening_adhkar',
     arabicText: "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم قُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ.",
-    repetition: "ثلاث مرات",
+    repetition: "3 مرات",
     targetCount: 3,
     source: "القرآن الكريم - سورة الإخلاص (من قرأهن حين يمسي وحين يصبح كفته من كل شيء)"
   },
@@ -249,7 +249,7 @@ const eveningAdhkarSupplications: Supplication[] = [
     id: 'evening_falaq',
     categoryKey: 'evening_adhkar',
     arabicText: "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ.",
-    repetition: "ثلاث مرات",
+    repetition: "3 مرات",
     targetCount: 3,
     source: "القرآن الكريم - سورة الفلق (من قرأهن حين يمسي وحين يصبح كفته من كل شيء)"
   },
@@ -257,7 +257,7 @@ const eveningAdhkarSupplications: Supplication[] = [
     id: 'evening_nas',
     categoryKey: 'evening_adhkar',
     arabicText: "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ، مَلِكِ ٱلنَّاسِ، إِلَٰهِ ٱلنَّاسِ، مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ، ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ، مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ.",
-    repetition: "ثلاث مرات",
+    repetition: "3 مرات",
     targetCount: 3,
     source: "القرآن الكريم - سورة الناس (من قرأهن حين يمسي وحين يصبح كفته من كل شيء)"
   },
@@ -265,14 +265,14 @@ const eveningAdhkarSupplications: Supplication[] = [
     id: 'evening_audhu_bikalimatillah',
     categoryKey: 'evening_adhkar',
     arabicText: "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ.",
-    repetition: "ثلاث مرات",
+    repetition: "3 مرات",
     targetCount: 3,
     source: "صحيح مسلم"
   },
   {
-    id: 'evening_amanarrasool', // Kept as it's important
+    id: 'evening_amanarrasool',
     categoryKey: 'evening_adhkar',
-    arabicText: "آمَنَ الرَّسُولُ بِمَا أُنْزِلَ إِلَيْهِ مِنْ رَبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ رُسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ. لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَّسِينَآ أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ.",
+    arabicText: "آمَنَ الرَّسُولُ بِمَا أُنْزِلَ إِلَيْهِ مِنْ رَبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ رُسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ. لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُsعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَّسِينَآ أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ.",
     repetition: "مرة واحدة",
     targetCount: 1,
     source: "القرآن الكريم - سورة البقرة، الآيات 285-286 (من قرأهما في ليلة كفتاه)"
@@ -291,8 +291,8 @@ const patientDuaSupplications: Supplication[] = [
   {
     id: 'patient_ruqyah_sharعية',
     categoryKey: 'patient_dua',
-    arabicText: "بِسْمِ اللهِ أَرْقِيكَ، مِنْ كُلِّ شَيْءٍ يُؤْذِيكَ، مِنْ شَرِّ كُلِّ نَفْسٍ أَوْ عَيْنِ حَاسِدٍ، اللهُ يَشْفِيكَ، بِسْمِ اللهِ أَرْقِيكَ.",
-    repetition: "مرة واحدة أو أكثر", // Original had "الله يشفيك" then "بسم الله أرقيك" again, combined for clarity
+    arabicText: "بِسْمِ اللهِ أَرْقِيكَ، مِنْ كُلِّ شَيْءٍ يُؤْذِيكَ، مِنْ شَرِّ كُلِّ نَفْسٍ أَوْ عَيْنِ حَاسِدٍ، اللهُ يَشْفِيكَ.",
+    repetition: "مرة واحدة أو أكثر",
     targetCount: 1,
     source: "رواه مسلم"
   },
@@ -300,14 +300,14 @@ const patientDuaSupplications: Supplication[] = [
     id: 'patient_visit_dua',
     categoryKey: 'patient_dua',
     arabicText: "لَا بَأْسَ، طَهُورٌ إِنْ شَاءَ اللهُ.",
-    repetition: "مرة واحدة عند زيارة المريض",
+    repetition: "عند زيارة المريض",
     targetCount: 1,
     source: "رواه البخاري"
   },
   {
     id: 'patient_allahumma_rabba_nas_mudhhibal_bas',
     categoryKey: 'patient_dua',
-    arabicText: "اللَّهُمَّ رَبَّ النَّاسِ، مُذْهِبَ الْبَاسِ، اشْفِهِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ.", // Note: This is very similar to the first one, user might have intended a slight variation or repetition
+    arabicText: "اللَّهُمَّ رَبَّ النَّاسِ، مُذْهِبَ الْبَاسِ، اشْفِهِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ.",
     repetition: "مرة واحدة أو أكثر",
     targetCount: 1,
     source: "رواه البخاري ومسلم"
@@ -324,7 +324,7 @@ const patientDuaSupplications: Supplication[] = [
     id: 'patient_hand_on_forehead_dua',
     categoryKey: 'patient_dua',
     arabicText: "اللَّهُمَّ اشْفِ عَبْدَكَ، يَنْكَأُ لَكَ عَدُوًّا، أَوْ يَمْشِي لَكَ إِلَى صَلَاةٍ.",
-    repetition: "مرة واحدة عند وضع اليد",
+    repetition: "عند وضع اليد",
     targetCount: 1,
     source: "رواه أبو داود وحسنه الألباني"
   },
@@ -333,7 +333,7 @@ const patientDuaSupplications: Supplication[] = [
     categoryKey: 'patient_dua',
     arabicText: "وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ",
     repetition: "قراءة مع التدبر",
-    targetCount: 1,
+    targetCount: 0, // No counter needed
     source: "سورة الشعراء: 80"
   },
   {
@@ -341,7 +341,7 @@ const patientDuaSupplications: Supplication[] = [
     categoryKey: 'patient_dua',
     arabicText: "وَنُنَزِّلُ مِنَ الْقُرْآنِ مَا هُوَ شِفَاءٌ وَرَحْمَةٌ لِّلْمُؤْمِنِينَ",
     repetition: "قراءة مع التدبر",
-    targetCount: 1,
+    targetCount: 0, // No counter needed
     source: "سورة الإسراء: 82"
   },
   {
@@ -352,7 +352,6 @@ const patientDuaSupplications: Supplication[] = [
     targetCount: 1,
     source: "دعاء عام"
   }
-  // Note: Reading Surah Al-Fatihah is a practice, not a specific du'a text to list here in the same way.
 ];
 
 const deceasedDuaSupplications: Supplication[] = [
@@ -383,7 +382,7 @@ const deceasedDuaSupplications: Supplication[] = [
   {
     id: 'deceased_visiting_graves_dua',
     categoryKey: 'deceased_dua',
-    arabicText: "السَّلَامُ عَلَيْكُمْ أَهْلَ الدِّيَارِ مِنَ الْمُؤْمِنِينَ وَالْمُسْلِمِينَ، وَإِنَّا إِنْ شَاءَ اللَّهُ بِكُمْ لَلَاحِقُونَ، اللَّهُمَّ اغْفِرْ لِأَهْلِ بَقِيعِ الْغَرْقَدِ.", // Note: "أسأل الله لنا ولكم العافية" is often part of this dua. User provided version is also common.
+    arabicText: "السَّلَامُ عَلَيْكُمْ أَهْلَ الدِّيَارِ مِنَ الْمُؤْمِنِينَ وَالْمُسْلِمِينَ، وَإِنَّا إِنْ شَاءَ اللَّهُ بِكُمْ لَلَاحِقُونَ، اللَّهُمَّ اغْفِرْ لِأَهْلِ بَقِيعِ الْغَرْقَدِ.",
     repetition: "عند زيارة القبور",
     targetCount: 1,
     source: "رواه مسلم"
@@ -420,7 +419,6 @@ const deceasedDuaSupplications: Supplication[] = [
     targetCount: 1,
     source: "دعاء عام"
   }
-  // Note: Reading Quran and gifting Thawab is a practice.
 ];
 
 const travelDuaSupplications: Supplication[] = [
@@ -475,10 +473,10 @@ const travelDuaSupplications: Supplication[] = [
   {
     id: 'travel_entering_village_city',
     categoryKey: 'travel_dua',
-    arabicText: "اللَّهُمَّ رَبَّ السَّمَوَاتِ السَّبْعِ وَمَا أَظْلَلْنَ، وَرَبَّ الأَرَضِينَ السَّبْعِ وَمَا أَقْلَلْنَ، وَرَبَّ الشَّيَاطِينِ وَمَا أَضْلَلْنَ، وَرَبَّ الرِّيَاحِ وَمَا ذَرَيْنَ، أَسْأَلُكَ خَيْرَ هَذِهِ الْقَرْيَةِ، وَخَيْرَ أَهْلِهَا، وَخَيْرَ مَا فِيهَا، وَأَعُوذُ بِكَ مِنْ شَرِّهَا، وَشَرِّ أَهْلِهَا، وَشَرِّ مَا فِيهَا.", // User provided a shorter version "اللَّهُمَّ ارْزُقْنَا بِهَا خَيْرًا، وَاصْرِفْ عَنَّا شَرَّهَا", the longer one is more common for entering a village/city.
+    arabicText: "اللَّهُمَّ رَبَّ السَّمَوَاتِ السَّبْعِ وَمَا أَظْلَلْنَ، وَرَبَّ الأَرَضِينَ السَّبْعِ وَمَا أَقْلَلْنَ، وَرَبَّ الشَّيَاطِينِ وَمَا أَضْلَلْنَ، وَرَبَّ الرِّيَاحِ وَمَا ذَرَيْنَ، أَسْأَلُكَ خَيْرَ هَذِهِ الْقَرْيَةِ، وَخَيْرَ أَهْلِهَا، وَخَيْرَ مَا فِيهَا، وَأَعُوذُ بِكَ مِنْ شَرِّهَا، وَشَرِّ أَهْلِهَا، وَشَرِّ مَا فِيهَا.",
     repetition: "عند دخول القرية أو المدينة",
     targetCount: 1,
-    source: "رواه الحاكم وصححه ووافقه الذهبي" // Source for the longer version
+    source: "رواه الحاكم وصححه ووافقه الذهبي"
   },
   {
     id: 'travel_fear_during_journey',
@@ -499,12 +497,11 @@ const travelDuaSupplications: Supplication[] = [
   {
     id: 'travel_returning_to_family',
     categoryKey: 'travel_dua',
-    arabicText: "اللَّهُمَّ اجْعَلْ لَنَا فِي سَفَرِنَا هَذَا بَرَكَةً وَتَقْوَىً، وَمِنَ الْعَمَلِ مَا تَرْضَى. اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ، وَالْخَلِيفَةُ فِي الأَهْلِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ، وَكَآبَةِ الْمَنْظَرِ، وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالأَهْلِ وَالْوَلَدِ.", // Combined with parts of other travel duas for completeness on return
+    arabicText: "اللَّهُمَّ اجْعَلْ لَنَا فِي سَفَرِنَا هَذَا بَرَكَةً وَتَقْوَىً، وَمِنَ الْعَمَلِ مَا تَرْضَى.",
     repetition: "عند العودة إلى الأهل",
     targetCount: 1,
-    source: "مجموع من أدعية السفر"
+    source: "من أدعية السفر"
   }
-  // Notes on tasbeeh, sadaqah, ayat al kursi are practices.
 ];
 
 const istikharaDuaSupplications: Supplication[] = [
@@ -528,7 +525,6 @@ export const adhkarCategories: AdhkarCategory[] = [
   { id: 'deceased_dua', title: 'دعاء للميت', supplications: deceasedDuaSupplications, iconName: 'BedDouble' },
 ];
 
-// Helper to get all supplications or by category for page generation
 export const getSupplicationsByCategory = (categoryId: string): Supplication[] => {
   const category = adhkarCategories.find(cat => cat.id === categoryId);
   return category ? category.supplications : [];
