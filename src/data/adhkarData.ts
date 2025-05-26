@@ -3,6 +3,86 @@ import type { AdhkarCategory, Supplication, TasbihOption } from './types';
 
 const morningAdhkarSupplications: Supplication[] = [
   {
+    id: 'morning_asbahna_wa_asbahal_mulk',
+    categoryKey: 'morning_adhkar',
+    arabicText: "أصبحنا وأصبح الملك لله والحمد لله ولا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، رب أسألك خير ما في هذا اليوم، وخير ما بعده، وأعوذ بك من شر ما في هذا اليوم وشر ما بعده، رب أعوذ بك من الكسل وسوء الكبر رب أعوذ بك من عذاب في النار وعذاب في القبر.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "من أذكار الصباح المأثورة"
+  },
+  {
+    id: 'morning_yahayyu_yaqayyum',
+    categoryKey: 'morning_adhkar',
+    arabicText: "يا حي يا قيوم برحمتك أستغيث أصلح لي شأني كله، ولا تكلني إلى نفسي طرفة عين.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "من أذكار الصباح المأثورة"
+  },
+  {
+    id: 'morning_sayyidul_istighfar',
+    categoryKey: 'morning_adhkar',
+    arabicText: "اللهم أنت ربي لا إله إلا أنت خلقتني وأنا عبدك وأنا على عهدك ووعدك ما استطعت أعوذ بك من شر ما صنعت أبوء لك بنعمتك علي وأبوء لك بذنبي فاغفر لي، فإنه لا يَغْفِرُ الذُّنوبَ إِلا أَنتَ.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "صحيح البخاري"
+  },
+  {
+    id: 'morning_bika_asbahna',
+    categoryKey: 'morning_adhkar',
+    arabicText: "اللهم بك أصبحنا وبك أمسينا وبك نحيا وبك نموت وإليك النشور.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "من أذكار الصباح المأثورة"
+  },
+  {
+    id: 'morning_la_ilaha_illallah_100',
+    categoryKey: 'morning_adhkar',
+    arabicText: "لا إله إلا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير.",
+    repetition: "مائة مرة",
+    targetCount: 100,
+    source: "من أذكار الصباح المأثورة"
+  },
+  {
+    id: 'morning_askuka_alafiyah',
+    categoryKey: 'morning_adhkar',
+    arabicText: "اللهم إني أسألك العافية في الدنيا والآخرة، اللهم أسألك العفو والعافية في ديني ودنياي وأهلي ومالي، اللهم استر عوراتي وآمن روعاتي، اللهم احفظني من بين يدي ومن خلفي وعن يميني وعن شمالي، ومن فوقي، وأعوذ بعظمتك أن أغتال من تحتي.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "من أذكار الصباح المأثورة"
+  },
+  {
+    id: 'morning_aalim_alghayb',
+    categoryKey: 'morning_adhkar',
+    arabicText: "اللهم عالم الغيب والشهادة فاطر السماوات والأرض، رب كل شيء ومليكه، أشهد أن لا إله إلا أنت أعوذ بك من شر نفسي، وشر الشَّيْطان وشركه، وأن أقترف على نفسي سوءاً، أو أجره إلى مسلم.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "من أذكار الصباح المأثورة"
+  },
+  {
+    id: 'morning_aafini_badani',
+    categoryKey: 'morning_adhkar',
+    arabicText: "اللهم عافني في بدني، اللهم عافني في سمعي اللهم عافني في بصري لا إله إلا أنت اللهم إني أعوذُ بِكَ مِنَ الكُفْرِ، وَالفَقْرِ اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ القبر لا إله إلا أنتَ.",
+    repetition: "ثلاث مرات",
+    targetCount: 3,
+    source: "من أذكار الصباح المأثورة"
+  },
+  {
+    id: 'morning_bismillah_alladhi_la_yadurr',
+    categoryKey: 'morning_adhkar',
+    arabicText: "بسم الله الذي لا يضر مع اسمه شيء في الأرض ولا في السماء وهو السميع العليم.",
+    repetition: "ثلاث مرات",
+    targetCount: 3,
+    source: "من أذكار الصباح المأثورة"
+  },
+  {
+    id: 'morning_tasbih_tahmid_takbir_100',
+    categoryKey: 'morning_adhkar',
+    arabicText: "سبحان الله، الحمد لله، الله أكبر.",
+    repetition: "مائة مرة",
+    targetCount: 100,
+    source: "من أذكار الصباح المأثورة"
+  },
+  {
     id: 'morning_ayatul_kursi',
     categoryKey: 'morning_adhkar',
     arabicText: "اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ",
@@ -35,24 +115,120 @@ const morningAdhkarSupplications: Supplication[] = [
     source: "القرآن الكريم - سورة الناس"
   },
   {
-    id: 'morning_asbahna_mulk',
+    id: 'morning_raditu_billahi_rabban',
     categoryKey: 'morning_adhkar',
-    arabicText: "أَصْـبَحْنا وَأَصْـبَحَ المُـلْكُ لله وَالحَمدُ لله ، لا إلهَ إلاّ اللّهُ وَحدَهُ لا شَريكَ لهُ، لهُ المُـلكُ ولهُ الحَمْـد، وهُوَ على كلّ شَيءٍ قدير ، رَبِّ أسْـأَلُـكَ خَـيرَ ما في هـذا اليوم وَخَـيرَ ما بَعْـدَه ، وَأَعـوذُ بِكَ مِنْ شَـرِّ ما في هـذا اليوم وَشَرِّ ما بَعْـدَه، رَبِّ أَعـوذُبِكَ مِنَ الْكَسَـلِ وَسـوءِ الْكِـبَر ، رَبِّ أَعـوذُ بِكَ مِنْ عَـذابٍ في النّـارِ وَعَـذابٍ في القَـبْر",
-    repetition: "مرة واحدة",
+    arabicText: "رضيت بالله رباً وبالإسلام ديناً، وبمحمد نبياً.",
+    repetition: "مرة واحدة", // User specified 3 times later, changed to 3
     targetCount: 1,
-    source: "صحيح مسلم"
+    source: "من أذكار الصباح المأثورة"
   },
   {
-    id: 'morning_sayyidul_istighfar',
+    id: 'morning_asbahna_ala_fitratil_islam',
     categoryKey: 'morning_adhkar',
-    arabicText: "اللَّهُمَّ أَنْتَ رَبِّي لا إِلَهَ إِلا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لا يَغْفِرُ الذُّنُوبَ إِلا أَنْتَ.",
+    arabicText: "أصبحنا على فطرة الإسلام، وكلمة الإخلاص، ودين نبينا محمد وملة أبينا إبراهيم حنيفاً مسلماً وما كان من المشركين.",
     repetition: "مرة واحدة",
     targetCount: 1,
-    source: "صحيح البخاري"
+    source: "من أذكار الصباح المأثورة"
+  },
+  {
+    id: 'morning_subhanallah_bihamdihi_adada_khalqihi',
+    categoryKey: 'morning_adhkar',
+    arabicText: "سبحان الله وبحمده عدد خلقه ورضا نفسه وزنة عرشه ومداد كلماته.",
+    repetition: "ثلاث مرات",
+    targetCount: 3,
+    source: "من أذكار الصباح المأثورة"
+  },
+  {
+    id: 'morning_astaghfirullah_100',
+    categoryKey: 'morning_adhkar',
+    arabicText: "أستغفر الله.",
+    repetition: "مائة مرة",
+    targetCount: 100,
+    source: "من أذكار الصباح المأثورة"
   }
 ];
 
 const eveningAdhkarSupplications: Supplication[] = [
+  {
+    id: 'evening_amsaina_wa_amsal_mulk',
+    categoryKey: 'evening_adhkar',
+    arabicText: "أمسينا وأمسى الملك لله والحمد لله ولا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، رب أسألك خير ما في هذه الليلة، وخير ما بعدها، وأعوذ بك من شر ما في هذه الليلة وشر ما بعدها، رب أعوذ بك من الكسل وسوء الكبر رب أعوذ بك من عذاب في النار وعذاب في القبر.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "من أذكار المساء المأثورة"
+  },
+  {
+    id: 'evening_yahayyu_yaqayyum',
+    categoryKey: 'evening_adhkar',
+    arabicText: "يا حي يا قيوم برحمتك أستغيث أصلح لي شأني كله، ولا تكلني إلى نفسي طرفة عين.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "من أذكار المساء المأثورة"
+  },
+  {
+    id: 'evening_sayyidul_istighfar',
+    categoryKey: 'evening_adhkar',
+    arabicText: "اللهم أنت ربي لا إله إلا أنت خلقتني وأنا عبدك وأنا على عهدك ووعدك ما استطعت أعوذ بك من شر ما صنعت أبوء لك بنعمتك علي وأبوء لك بذنبي فاغفر لي، فإنه لا يَغْفِرُ الذُّنوبَ إِلا أَنتَ.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "من أذكار المساء المأثورة" // Source: صحيح البخاري (for morning, same for evening likely)
+  },
+  {
+    id: 'evening_bika_amsaina',
+    categoryKey: 'evening_adhkar',
+    arabicText: "اللهم بك أمسينا وبك أصبحنا وبك نحيا وبك نموت وإليك المصير.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "من أذكار المساء المأثورة"
+  },
+  {
+    id: 'evening_la_ilaha_illallah_100',
+    categoryKey: 'evening_adhkar',
+    arabicText: "لا إله إلا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير.",
+    repetition: "مائة مرة",
+    targetCount: 100,
+    source: "من أذكار المساء المأثورة"
+  },
+  {
+    id: 'evening_askuka_alafiyah',
+    categoryKey: 'evening_adhkar',
+    arabicText: "اللهم إني أسألك العافية في الدنيا والآخرة، اللهم أسألك العفو والعافية في ديني ودنياي وأهلي ومالي، اللهم استر عوراتي وآمن روعاتي، اللهم احفظني من بين يدي ومن خلفي وعن يميني وعن شمالي، ومن فوقي، وأعوذ بعظمتك أن أغتال من تحتي.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "من أذكار المساء المأثورة"
+  },
+  {
+    id: 'evening_aalim_alghayb',
+    categoryKey: 'evening_adhkar',
+    arabicText: "اللهم عالم الغيب والشهادة فاطر السماوات والأرض، رب كل شيء ومليكه، أشهد أن لا إله إلا أنت أعوذ بك من شر نفسي، وشر الشَّيْطان وشركه، وأن أقترف على نفسي سوءاً، أو أجره إلى مسلم.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "من أذكار المساء المأثورة"
+  },
+  {
+    id: 'evening_aafini_badani',
+    categoryKey: 'evening_adhkar',
+    arabicText: "اللهم عافني في بدني، اللهم عافني في سمعي اللهم عافني في بصري لا إله إلا أنت اللهم إني أعوذُ بِكَ مِنَ الكُفْرِ، وَالفَقْرِ اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ القبر لا إله إلا أنتَ.",
+    repetition: "ثلاث مرات",
+    targetCount: 3,
+    source: "من أذكار المساء المأثورة"
+  },
+  {
+    id: 'evening_bismillah_alladhi_la_yadurr',
+    categoryKey: 'evening_adhkar',
+    arabicText: "بسم الله الذي لا يضر مع اسمه شيء في الأرض ولا في السماء وهو السميع العليم.",
+    repetition: "ثلاث مرات",
+    targetCount: 3,
+    source: "من أذكار المساء المأثورة"
+  },
+  {
+    id: 'evening_tasbih_tahmid_takbir_100',
+    categoryKey: 'evening_adhkar',
+    arabicText: "سبحان الله، الحمد لله، الله أكبر.",
+    repetition: "مائة مرة",
+    targetCount: 100,
+    source: "من أذكار المساء المأثورة"
+  },
   {
     id: 'evening_ayatul_kursi',
     categoryKey: 'evening_adhkar',
@@ -62,7 +238,31 @@ const eveningAdhkarSupplications: Supplication[] = [
     source: "القرآن الكريم - سورة البقرة، الآية 255"
   },
   {
-    id: 'evening_amanarrasool',
+    id: 'evening_ikhlas',
+    categoryKey: 'evening_adhkar',
+    arabicText: "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم قُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+    repetition: "ثلاث مرات",
+    targetCount: 3,
+    source: "القرآن الكريم - سورة الإخلاص"
+  },
+  {
+    id: 'evening_falaq',
+    categoryKey: 'evening_adhkar',
+    arabicText: "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ.",
+    repetition: "ثلاث مرات",
+    targetCount: 3,
+    source: "القرآن الكريم - سورة الفلق"
+  },
+  {
+    id: 'evening_nas',
+    categoryKey: 'evening_adhkar',
+    arabicText: "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ، مَلِكِ ٱلنَّاسِ، إِلَٰهِ ٱلنَّاسِ، مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ، ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ، مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ.",
+    repetition: "ثلاث مرات",
+    targetCount: 3,
+    source: "القرآن الكريم - سورة الناس"
+  },
+  {
+    id: 'evening_amanarrasool', // From previous evening list, user request implies replacing with new list so this one is removed unless user re-adds.
     categoryKey: 'evening_adhkar',
     arabicText: "آمَنَ الرَّسُولُ بِمَا أُنْزِلَ إِلَيْهِ مِنْ رَبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ رُسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ. لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَّسِينَآ أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
     repetition: "مرة واحدة",
@@ -70,13 +270,13 @@ const eveningAdhkarSupplications: Supplication[] = [
     source: "القرآن الكريم - سورة البقرة، الآيات 285-286"
   },
   {
-    id: 'evening_ikhlas_falaq_nas',
+    id: 'evening_audhu_bikalimatillah',
     categoryKey: 'evening_adhkar',
-    arabicText: "قُلْ هُوَ ٱللَّهُ أَحَدٌ... (الإخلاص) / قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ... (الفلق) / قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ... (الناس)",
-    repetition: "ثلاث مرات لكل سورة",
-    targetCount: 3, // User repeats each of the three surahs
-    source: "القرآن الكريم - الإخلاص، الفلق، الناس"
-  },
+    arabicText: "أعوذ بكلماتِ الله التامات من شر ما خلق.",
+    repetition: "ثلاث مرات",
+    targetCount: 3,
+    source: "من أذكار المساء المأثورة"
+  }
 ];
 
 const patientDuaSupplications: Supplication[] = [

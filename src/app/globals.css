@@ -14,16 +14,16 @@
     --popover: 220 30% 10%; /* Similar to card, maybe a bit darker */
     --popover-foreground: 210 20% 95%;
     
-    --primary: 255 70% 70%; /* Vibrant Amethyst/Deep Lilac - for "لمعة" */
+    --primary: 255 70% 75%; /* Vibrant Amethyst/Deep Lilac - for "لمعة" - increased lightness */
     --primary-foreground: 255 20% 15%; /* Dark contrast for primary text */
     
-    --secondary: 190 60% 60%; /* Bright, calming Teal/Cyan */
+    --secondary: 190 60% 65%; /* Bright, calming Teal/Cyan - increased lightness */
     --secondary-foreground: 190 25% 10%;
     
     --muted: 220 20% 25%; /* Muted version of the dark blue */
     --muted-foreground: 210 15% 70%; /* Softer grey for muted text */
     
-    --accent: 45 90% 60%; /* Radiant Gold/Warm Orange - for "لمعة" and highlight */
+    --accent: 45 90% 65%; /* Radiant Gold/Warm Orange - for "لمعة" and highlight - increased lightness */
     --accent-foreground: 45 30% 10%; /* Dark text on accent */
     
     --destructive: 0 75% 60%; /* Strong, clear Red */
@@ -31,25 +31,25 @@
     
     --border: 220 25% 20%; /* Subtle border, related to background/card */
     --input: 220 25% 22%; /* Input fields, slightly lighter than border */
-    --ring: 255 70% 65%; /* Ring color based on new primary */
+    --ring: 255 70% 70%; /* Ring color based on new primary - slightly adjusted */
     
-    --chart-1: 45 90% 60%; /* Accent Gold */
-    --chart-2: 190 60% 60%; /* Secondary Teal */
-    --chart-3: 255 70% 70%; /* Primary Amethyst */
+    --chart-1: 45 90% 65%; /* Accent Gold (adjusted) */
+    --chart-2: 190 60% 65%; /* Secondary Teal (adjusted) */
+    --chart-3: 255 70% 75%; /* Primary Amethyst (adjusted) */
     --chart-4: 210 50% 70%; /* A lighter, desaturated blue */
     --chart-5: 330 70% 65%; /* A complementary Pink/Rose */
 
     --radius: 0.75rem; /* Slightly more rounded corners */
 
     /* Sidebar specific colors for dark theme */
-    --sidebar-background: 220 30% 10%; /* Consistent with main dark bg */
+    --sidebar-background: 220 30% 10%; 
     --sidebar-foreground: 210 20% 92%;
-    --sidebar-primary: 255 70% 68%; /* Primary color for sidebar highlights */
+    --sidebar-primary: 255 70% 72%; /* Primary color for sidebar highlights (adjusted) */
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 45 90% 58%; /* Accent color for sidebar */
+    --sidebar-accent: 45 90% 62%; /* Accent color for sidebar (adjusted) */
     --sidebar-accent-foreground: 210 20% 92%;
     --sidebar-border: 220 25% 18%;
-    --sidebar-ring: 255 70% 62%;
+    --sidebar-ring: 255 70% 68%; /* (adjusted) */
   }
 
   .light { 
@@ -63,16 +63,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 25% 15%;
     
-    --primary: 250 65% 60%; /* A clear, friendly Blue/Violet */
+    --primary: 250 65% 65%; /* A clear, friendly Blue/Violet - increased lightness */
     --primary-foreground: 0 0% 100%; 
     
-    --secondary: 180 55% 55%; /* Soft Cyan/Turquoise */
+    --secondary: 180 55% 60%; /* Soft Cyan/Turquoise - increased lightness */
     --secondary-foreground: 180 25% 10%;
     
     --muted: 220 20% 90%; /* Very light grey for muted elements */
     --muted-foreground: 220 15% 45%;
     
-    --accent: 35 85% 55%; /* Sunny Orange/Yellow accent */
+    --accent: 35 85% 60%; /* Sunny Orange/Yellow accent - increased lightness */
     --accent-foreground: 35 30% 10%; 
     
     --destructive: 0 70% 55%; 
@@ -80,17 +80,17 @@
     
     --border: 220 20% 85%; 
     --input: 220 20% 88%; 
-    --ring: 250 65% 55%; 
+    --ring: 250 65% 60%; /* (adjusted) */
     
     /* Sidebar specific colors for light theme */
     --sidebar-background: 220 20% 96%; 
     --sidebar-foreground: 220 25% 20%;
-    --sidebar-primary: 250 65% 58%;
+    --sidebar-primary: 250 65% 62%; /* (adjusted) */
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 35 85% 58%;
+    --sidebar-accent: 35 85% 62%; /* (adjusted) */
     --sidebar-accent-foreground: 35 30% 15%;
     --sidebar-border: 220 20% 82%;
-    --sidebar-ring: 250 65% 52%;
+    --sidebar-ring: 250 65% 58%; /* (adjusted) */
   }
 }
 
@@ -109,20 +109,20 @@
 
 /* Custom scrollbar for better aesthetics */
 ::-webkit-scrollbar {
-  width: 10px; /* Slightly wider scrollbar */
+  width: 10px; 
   height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(var(--background) / 0.7); /* Track related to background */
+  background: hsl(var(--background) / 0.7); 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary) / 0.6); /* Thumb using primary color with some transparency */
+  background: hsl(var(--primary) / 0.6); 
   border-radius: 10px;
-  border: 2px solid hsl(var(--background) / 0.7); /* Border to match track for a 'floating' look */
+  border: 2px solid hsl(var(--background) / 0.7); 
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--primary)); /* Full primary color on hover */
+  background: hsl(var(--primary)); 
 }
 
 /* Smooth scrolling for anchor links */
