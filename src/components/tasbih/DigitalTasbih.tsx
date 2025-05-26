@@ -1,26 +1,27 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { RefreshCcw, VenetianMask, Plus, Target } from 'lucide-react'; // Using VenetianMask as placeholder
+import { RefreshCcw, VenetianMask, Plus, Target } from 'lucide-react'; 
 import { tasbihOptions } from '@/data/adhkarData';
 import type { TasbihOption } from '@/data/types';
 
 const DigitalTasbih: React.FC = () => {
   const [count, setCount] = useState(0);
   const [selectedTasbih, setSelectedTasbih] = useState<TasbihOption>(tasbihOptions[0]);
-  const [goal, setGoal] = useState<number>(33); // Default goal
+  const [goal, setGoal] = useState<number>(33); 
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true); // Ensures this runs only on client to avoid hydration issues with localStorage
+    setIsClient(true); 
     if (typeof window !== 'undefined') {
       const savedCount = localStorage.getItem(`tasbihCount_${selectedTasbih.id}`);
       const savedGoal = localStorage.getItem(`tasbihGoal_${selectedTasbih.id}`);
       if (savedCount) setCount(parseInt(savedCount, 10));
-      if (savedGoal) setGoal(parseInt(savedGoal, 10)); else setGoal(33); // Reset to default if not specific goal
+      if (savedGoal) setGoal(parseInt(savedGoal, 10)); else setGoal(33); 
     }
   }, [selectedTasbih.id]);
 
@@ -37,7 +38,6 @@ const DigitalTasbih: React.FC = () => {
   const handleTasbihChange = (value: string) => {
     const newSelected = tasbihOptions.find(opt => opt.id === value) || tasbihOptions[0];
     setSelectedTasbih(newSelected);
-    // Reset count and goal for new selection, or load from storage (handled by useEffect)
     setCount(0); 
     const savedGoal = localStorage.getItem(`tasbihGoal_${newSelected.id}`);
     setGoal(savedGoal ? parseInt(savedGoal, 10) : 33);
@@ -56,9 +56,9 @@ const DigitalTasbih: React.FC = () => {
     return (
       <section id="tasbih-section" className="py-8 scroll-mt-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8 text-primary">السبحة الإلكترونية</h2>
-           <Card className="max-w-md mx-auto shadow-xl p-6 text-center">
-            <CardHeader><CardTitle>جاري التحميل...</CardTitle></CardHeader>
+          <h2 className="main-section-title">السبحة الإلكترونية</h2>
+           <Card className="max-w-md mx-auto shadow-xl p-6 text-center bg-card">
+            <CardHeader><CardTitle className="text-primary">جاري التحميل...</CardTitle></CardHeader>
           </Card>
         </div>
       </section>
@@ -68,17 +68,15 @@ const DigitalTasbih: React.FC = () => {
   return (
     <section id="tasbih-section" className="py-8 scroll-mt-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 text-primary relative pb-2
-                       after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 
-                       after:w-20 after:h-1 after:bg-accent after:rounded-full">
+        <h2 className="main-section-title">
           السبحة الإلكترونية
         </h2>
-        <Card className="max-w-md mx-auto shadow-xl p-6">
+        <Card className="max-w-md mx-auto shadow-xl p-6 bg-card">
           <CardHeader className="text-center pb-4">
             <div className="flex justify-center items-center mb-4">
               <VenetianMask className="h-12 w-12 text-primary" />
             </div>
-            <CardTitle className="text-2xl">التسبيح الحالي: {selectedTasbih.text}</CardTitle>
+            <CardTitle className="text-2xl text-primary">التسبيح الحالي: {selectedTasbih.text}</CardTitle>
           </CardHeader>
           <CardContent className="text-center">
             <div className="text-7xl font-bold my-8 text-primary tabular-nums" dir="ltr">{count}</div>

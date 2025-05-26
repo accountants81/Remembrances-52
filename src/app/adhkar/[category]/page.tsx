@@ -20,7 +20,7 @@ export default function AdhkarCategoryPage() {
   if (!category) {
     return (
       <div className="container mx-auto px-4 py-8 text-center">
-        <Card>
+        <Card className="bg-card">
           <CardHeader>
             <CardTitle className="text-destructive">قسم غير موجود</CardTitle>
           </CardHeader>
@@ -53,9 +53,7 @@ export default function AdhkarCategoryPage() {
     <section className="py-8">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-primary relative pb-2
-                       after:content-[''] after:absolute after:right-0 rtl:after:left-0 rtl:after:right-auto after:bottom-0 
-                       after:w-24 after:h-1 after:bg-accent after:rounded-full">
+          <h1 className="category-page-title">
             {category.title}
           </h1>
           <Button variant="outline" asChild>
@@ -91,9 +89,9 @@ export default function AdhkarCategoryPage() {
             ))}
           </div>
         ) : (
-          <Card className="text-center">
+          <Card className="text-center bg-card">
             <CardHeader>
-              <CardTitle>لا توجد أذكار</CardTitle>
+              <CardTitle className="text-primary">لا توجد أذكار</CardTitle>
             </CardHeader>
             <CardContent>
               <p>لا توجد أذكار متاحة في هذا القسم حاليًا.</p>

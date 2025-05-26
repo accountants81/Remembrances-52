@@ -27,9 +27,9 @@ const DailyWisdom: React.FC = () => {
 
   if (!currentWisdom) {
     return (
-      <section id="daily-wisdom-section" className="py-8 bg-accent/20 scroll-mt-20">
+      <section id="daily-wisdom-section" className="py-8 bg-accent/10 scroll-mt-20">
         <div className="container mx-auto px-4">
-          <Card className="max-w-2xl mx-auto shadow-lg text-center">
+          <Card className="max-w-2xl mx-auto shadow-lg text-center bg-card">
             <CardHeader>
               <CardTitle className="text-2xl text-primary">فائدة اليوم</CardTitle>
             </CardHeader>
@@ -45,12 +45,10 @@ const DailyWisdom: React.FC = () => {
   return (
     <section id="daily-wisdom-section" className="py-8 bg-accent/10 scroll-mt-20">
       <div className="container mx-auto px-4">
-         <h2 className="text-3xl font-bold text-center mb-8 text-primary relative pb-2
-                       after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 
-                       after:w-20 after:h-1 after:bg-accent after:rounded-full">
+         <h2 className="main-section-title">
           فائدة اليوم
         </h2>
-        <Card className="max-w-2xl mx-auto shadow-lg text-center">
+        <Card className="max-w-2xl mx-auto shadow-lg text-center bg-card">
           <CardHeader>
             <div className="flex justify-center items-center mb-2">
                 <Lightbulb className="h-10 w-10 text-accent"/>

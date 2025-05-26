@@ -35,9 +35,7 @@ const SinsWarning: React.FC = () => {
   return (
     <section id="sins-warning-section" className="py-8 scroll-mt-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 text-destructive relative pb-2
-                       after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 
-                       after:w-full sm:after:w-3/4 md:after:w-1/2 lg:after:w-1/3 after:max-w-xs after:h-1 after:bg-destructive after:rounded-full">
+        <h2 className="sins-warning-title">
           أكثر 10 ذنوب شائعة بين المسلمين في هذا الزمان
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
