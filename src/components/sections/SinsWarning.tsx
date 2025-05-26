@@ -1,3 +1,4 @@
+
 import { sinsData } from '@/data/sinsData';
 import type { SinEntry } from '@/data/types';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -36,8 +37,8 @@ const SinsWarning: React.FC = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8 text-destructive relative pb-2
                        after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 
-                       after:w-20 after:h-1 after:bg-destructive after:rounded-full">
-          محاذير شرعية وتنبيهات
+                       after:w-full sm:after:w-3/4 md:after:w-1/2 lg:after:w-1/3 after:max-w-xs after:h-1 after:bg-destructive after:rounded-full">
+          أكثر 10 ذنوب شائعة بين المسلمين في هذا الزمان
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {sinsData.map(sin => (

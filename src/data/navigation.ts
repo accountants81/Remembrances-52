@@ -12,7 +12,7 @@ export const navItems: NavItem[] = [
   { id: 'deceased-dua', label: 'دعاء للميت', href: '/adhkar/deceased_dua', icon: BedDouble },
   { id: 'tasbih', label: 'السبحة الإلكترونية', href: '/tasbih', icon: VenetianMask },
   { id: 'daily-wisdom', label: 'فائدة اليوم', href: '/daily-wisdom', icon: CalendarDays },
-  { id: 'sins-warning', label: 'محاذير شرعية', href: '/sins-warning', icon: AlertTriangle },
+  { id: 'sins-warning', label: 'أكثر 10 ذنوب شائعة', href: '/sins-warning', icon: AlertTriangle },
   { id: 'islamic-treasures', label: 'كنوز الإسلام', href: '/islamic-resources/treasures', icon: BookOpen },
   { id: 'useful-links', label: 'روابط مفيدة', href: '/islamic-resources/links', icon: LinkIconLucide },
 ];
