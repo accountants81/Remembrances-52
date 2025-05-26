@@ -1,3 +1,4 @@
+
 import type { AdhkarCategory, Supplication, TasbihOption } from './types';
 
 const morningAdhkarSupplications: Supplication[] = [
@@ -7,7 +8,6 @@ const morningAdhkarSupplications: Supplication[] = [
     arabicText: "اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ",
     repetition: "مرة واحدة",
     targetCount: 1,
-    // translation: "Allah! There is no god but He - the Living, The Self-subsisting, Eternal. No slumber can seize Him Nor Sleep. His are all things In the heavens and on earth. Who is there can intercede In His presence except As he permitteth? He knoweth What (appeareth to His creatures As) Before or After or Behind them. Nor shall they compass Aught of his knowledge Except as He willeth. His throne doth extend Over the heavens And on earth, and He feeleth No fatigue in guarding And preserving them, For He is the Most High, The Supreme (in glory).",
     source: "القرآن الكريم - سورة البقرة، الآية 255"
   },
   {
@@ -161,8 +161,24 @@ const variousDuaSupplications: Supplication[] = [
     categoryKey: 'various_dua_general',
     arabicText: "أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْهِ",
     repetition: "حسب الرغبة",
-    targetCount: 1, // Can be set higher or managed by user
+    targetCount: 1, 
     source: "أبو داود والترمذي"
+  },
+  {
+    id: 'various_dua_protection_comprehensive',
+    categoryKey: 'various_dua_general',
+    arabicText: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ.",
+    repetition: "مرة واحدة أو أكثر",
+    targetCount: 1,
+    source: "صحيح البخاري"
+  },
+  {
+    id: 'various_dua_rabbana_atina',
+    categoryKey: 'various_dua_general',
+    arabicText: "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ.",
+    repetition: "مرة واحدة أو أكثر",
+    targetCount: 1,
+    source: "القرآن الكريم - سورة البقرة، الآية 201"
   },
 ];
 

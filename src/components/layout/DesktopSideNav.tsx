@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -8,13 +9,14 @@ import type { NavItem } from '@/data/types';
 import { cn } from '@/lib/utils';
 
 export function DesktopSideNav() {
-  // Simple smooth scroll, can be improved with react-scroll or similar
+  // Removed smooth scroll for faster navigation
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
     e.preventDefault();
     const targetId = href.substring(1); // remove #
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
+      // targetElement.scrollIntoView({ behavior: 'smooth' }); // Removed smooth behavior
+      targetElement.scrollIntoView();
     }
   };
   
