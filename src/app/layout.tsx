@@ -11,8 +11,8 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: 'نور الذكر - Your Daily Islamic Companion', // Updated Site Name
-  description: 'موقع إسلامي شامل للأذكار والأدعية اليومية والفوائد الإسلامية.',
+  title: 'نَجَاتُكَ بِيَدِكَ - رفيقك اليومي للذكر والدعاء', // Updated Site Name
+  description: 'موقع إسلامي شامل للأذكار والأدعية اليومية والفوائد الإسلامية. نجاتك بيدك نحو حياة أكثر طمأنينة وقرباً من الله.',
   verification: {
     google: "erc3DhRH1Zx4lamgfNDwou_YZxbsSIYgVBByQy9YDZA",
   },

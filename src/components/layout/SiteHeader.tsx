@@ -15,7 +15,7 @@ const SiteHeader: React.FC<SiteHeaderProps> = () => {
       <div className="container flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2 rtl:space-x-reverse">
           {/* Optional: Add a simple SVG logo here if desired */}
-          <span className="font-bold text-xl sm:text-2xl text-primary">نور الذكر</span> {/* Updated Site Name */}
+          <span className="font-bold text-xl sm:text-2xl text-primary">نَجَاتُكَ بِيَدِكَ</span> {/* Updated Site Name */}
         </Link>
         
         <Sheet>
@@ -33,10 +33,6 @@ const SiteHeader: React.FC<SiteHeaderProps> = () => {
               {navItems.map((item: NavItem) => (
                 <Button key={item.id} variant="ghost" asChild className="justify-start text-lg">
                   <Link href={item.href} passHref>
-                    {/* It seems SheetClose is not working as expected within Link or Button for closing after click.
-                        Manual close or a different pattern might be needed if auto-close on nav is critical.
-                        For now, users will manually close the sheet.
-                     */}
                      <SheetTrigger> {/* Wrap link text in SheetTrigger to close on click */}
                        {item.icon && <item.icon className="mr-2 h-5 w-5 rtl:ml-2 rtl:mr-0" />}
                        {item.label}
