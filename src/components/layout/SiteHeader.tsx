@@ -15,7 +15,7 @@ const SiteHeader: React.FC<SiteHeaderProps> = () => {
       <div className="container flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2 rtl:space-x-reverse">
           {/* Optional: Add a simple SVG logo here if desired */}
-          <span className="font-bold text-xl sm:text-2xl text-primary">روضة الذكر</span>
+          <span className="font-bold text-xl sm:text-2xl text-primary">نور الذكر</span> {/* Updated Site Name */}
         </Link>
         
         <Sheet>

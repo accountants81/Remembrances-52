@@ -11,7 +11,7 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: 'روضة الذكر - Garden of Remembrance',
+  title: 'نور الذكر - Your Daily Islamic Companion', // Updated Site Name
   description: 'موقع إسلامي شامل للأذكار والأدعية اليومية والفوائد الإسلامية.',
   verification: {
     google: "erc3DhRH1Zx4lamgfNDwou_YZxbsSIYgVBByQy9YDZA",
