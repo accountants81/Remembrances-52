@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Twitter } from 'lucide-react'; // Example icons
 
 const Footer = () => {
   return (
@@ -16,23 +14,7 @@ const Footer = () => {
             تم التطوير بواسطة: فريق AAAMO
           </p>
         </div>
-        <div className="flex justify-center space-x-4 rtl:space-x-reverse mb-4">
-          <Button variant="ghost" size="icon" asChild>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <Twitter className="h-5 w-5" />
-            </Link>
-          </Button>
-          <Button variant="ghost" size="icon" asChild>
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <Github className="h-5 w-5" />
-            </Link>
-          </Button>
-           <Button variant="ghost" size="icon" asChild>
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <Linkedin className="h-5 w-5" />
-            </Link>
-          </Button>
-        </div>
+        {/* Social media icons removed as per user request */}
         <p className="text-xs">
           &copy; {new Date().getFullYear()} نَجَاتُكَ بِيَدِكَ. جميع الحقوق محفوظة.
         </p>
