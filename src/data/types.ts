@@ -5,15 +5,18 @@ export interface Supplication {
   arabicText: string;
   translation?: string; // Optional English translation
   repetition: string; // e.g., "مرة واحدة", "ثلاث مرات"
-  targetCount: number;
+  targetCount: number; // 0 if no counter needed (like for Quran verses)
   source?: string; // e.g., "رواه البخاري ومسلم"
   virtue?: string; // Pre-defined virtue, if any
+  iconName?: string; // Optional: For specific icon per supplication
 }
 
 export interface AdhkarCategory {
   id: string;
   title: string;
   supplications: Supplication[];
+  iconName?: string; // Lucide icon name for the category
+  description?: string; // Optional description for the category page
 }
 
 export interface SinEntry {
@@ -39,12 +42,14 @@ export interface ExternalLink {
   text: string;
   url: string;
   description?: string;
+  iconName?: string; // Lucide icon name
 }
 
 export interface LinkCategory {
   id: string;
   title: string;
   links: ExternalLink[];
+  iconName?: string; // Lucide icon name for the category
 }
 
 export interface TasbihOption {
@@ -55,6 +60,7 @@ export interface TasbihOption {
 export interface NavItem {
   id: string;
   label: string;
-  href: string; // Usually an anchor link like #section-id
+  href: string; 
   icon?: React.ElementType;
+  isExternal?: boolean; // For external links in nav if any
 }

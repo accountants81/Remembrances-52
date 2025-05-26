@@ -1,18 +1,17 @@
 import type { NavItem } from './types';
-import { Sunrise, Sunset, HeartPulse, BedDouble, VenetianMask, BookOpen, Link, CalendarDays, MessageCircleQuestion, AlertTriangle, Plane, SearchCheck } from 'lucide-react'; // ListChecks removed
+import { Sunrise, Sunset, HeartPulse, BedDouble, VenetianMask, BookOpen, Link as LinkIconLucide, CalendarDays, AlertTriangle, Plane, SearchCheck, Home } from 'lucide-react';
 
 export const navItems: NavItem[] = [
-  { id: 'welcome', label: 'مرحباً بكم', href: '#welcome-section' },
-  { id: 'morning-adhkar', label: 'أذكار الصباح', href: '#morning-adhkar-section', icon: Sunrise },
-  { id: 'evening-adhkar', label: 'أذكار المساء', href: '#evening-adhkar-section', icon: Sunset },
-  { id: 'travel-dua', label: 'دعاء السفر', href: '#travel-dua-section', icon: Plane },
-  { id: 'istikhara-dua', label: 'دعاء الاستخارة', href: '#istikhara-dua-section', icon: SearchCheck },
-  { id: 'patient-dua', label: 'دعاء للمريض', href: '#patient-dua-section', icon: HeartPulse },
-  { id: 'deceased-dua', label: 'دعاء للميت', href: '#deceased-dua-section', icon: BedDouble },
-  // { id: 'various-dua', label: 'أدعية متنوعة', href: '#various-dua-section', icon: ListChecks }, // Removed
-  { id: 'tasbih', label: 'السبحة الإلكترونية', href: '#tasbih-section', icon: VenetianMask },
-  { id: 'daily-wisdom', label: 'فائدة اليوم', href: '#daily-wisdom-section', icon: CalendarDays },
-  { id: 'sins-warning', label: 'محاذير شرعية', href: '#sins-warning-section', icon: AlertTriangle },
-  { id: 'islamic-treasures', label: 'كنوز الإسلام', href: '#islamic-treasures-section', icon: BookOpen },
-  { id: 'useful-links', label: 'روابط مفيدة', href: '#useful-links-section', icon: Link },
+  { id: 'home', label: 'الرئيسية', href: '/', icon: Home },
+  { id: 'morning-adhkar', label: 'أذكار الصباح', href: '/adhkar/morning', icon: Sunrise },
+  { id: 'evening-adhkar', label: 'أذكار المساء', href: '/adhkar/evening', icon: Sunset },
+  { id: 'travel-dua', label: 'دعاء السفر', href: '/adhkar/travel', icon: Plane },
+  { id: 'istikhara-dua', label: 'دعاء الاستخارة', href: '/adhkar/istikhara', icon: SearchCheck },
+  { id: 'patient-dua', label: 'دعاء للمريض', href: '/adhkar/patient', icon: HeartPulse },
+  { id: 'deceased-dua', label: 'دعاء للميت', href: '/adhkar/deceased', icon: BedDouble },
+  { id: 'tasbih', label: 'السبحة الإلكترونية', href: '/tasbih', icon: VenetianMask },
+  { id: 'daily-wisdom', label: 'فائدة اليوم', href: '/daily-wisdom', icon: CalendarDays },
+  { id: 'sins-warning', label: 'محاذير شرعية', href: '/sins-warning', icon: AlertTriangle },
+  { id: 'islamic-treasures', label: 'كنوز الإسلام', href: '/islamic-resources/treasures', icon: BookOpen }, // Adjusted href
+  { id: 'useful-links', label: 'روابط مفيدة', href: '/islamic-resources/links', icon: LinkIconLucide }, // Adjusted href
 ];

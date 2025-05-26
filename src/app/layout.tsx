@@ -1,8 +1,11 @@
 import type {Metadata} from 'next';
-import { Noto_Kufi_Arabic } from 'next/font/google'; // Using Noto Kufi Arabic for better Arabic script rendering
+import { Noto_Kufi_Arabic } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import AppProviders from '@/components/providers/AppProviders';
+import SiteHeader from '@/components/layout/SiteHeader';
+import { DesktopSideNav } from '@/components/layout/DesktopSideNav';
+import Footer from '@/components/layout/Footer';
 
 const notoKufiArabic = Noto_Kufi_Arabic({
   subsets: ['arabic'],
@@ -11,7 +14,7 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: 'نَجَاتُكَ بِيَدِكَ - رفيقك اليومي للذكر والدعاء', // Updated Site Name
+  title: 'روضة الذكر - Garden of Remembrance',
   description: 'موقع إسلامي شامل للأذكار والأدعية اليومية والفوائد الإسلامية. نجاتك بيدك نحو حياة أكثر طمأنينة وقرباً من الله.',
   verification: {
     google: "erc3DhRH1Zx4lamgfNDwou_YZxbsSIYgVBByQy9YDZA",
@@ -25,9 +28,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${notoKufiArabic.variable} font-sans antialiased`}>
+      <body className={`${notoKufiArabic.variable} font-sans antialiased flex flex-col min-h-screen`}>
         <AppProviders>
-          {children}
+          <SiteHeader />
+          <div className="flex flex-1 container mx-auto rtl:space-x-reverse">
+            <DesktopSideNav />
+            <main className="flex-1 py-6 px-0 md:px-4 lg:px-6 overflow-y-auto">
+              {children}
+            </main>
+          </div>
+          <Footer />
           <Toaster />
         </AppProviders>
       </body>

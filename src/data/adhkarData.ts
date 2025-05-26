@@ -74,13 +74,13 @@ const morningAdhkarSupplications: Supplication[] = [
     targetCount: 3,
     source: "سنن الترمذي"
   },
-  { // Combined "سبحان الله، الحمد لله، الله أكبر" into one card
-    id: 'morning_tasbih_tahmid_takbir_100',
+  {
+    id: 'morning_subhanallah_alhamdulillah_allahuakbar_100',
     categoryKey: 'morning_adhkar',
-    arabicText: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ (مائة مرة)، الْحَمْدُ لِلَّهِ (مائة مرة)، اللَّهُ أَكْبَرُ (مائة مرة).", // Text adjusted for clarity, though practically these might be done separately
+    arabicText: "سُبْحَانَ اللَّهِ، الْحَمْدُ لِلَّهِ، اللَّهُ أَكْبَرُ.",
     repetition: "مائة مرة لكل ذكر",
-    targetCount: 100, // This could be 300 if counted per phrase, or 100 if it implies 100 cycles of all three. User likely meant 100 of each.
-    source: "حديث: 'من قال سبحان الله وبحمده مائة مرة...' (متفق عليه) - تم تجميعها هنا للتسبيح والتحميد والتكبير"
+    targetCount: 100,
+    source: "أذكار الصباح"
   },
   {
     id: 'morning_ayatul_kursi',
@@ -118,8 +118,8 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_raditu_billahi_rabban',
     categoryKey: 'morning_adhkar',
     arabicText: "رَضِيتُ بِاللَّهِ رَبًّا، وَبِالإِسْلاَمِ دِينًا، وَبِمُحَمَّدٍ صلى الله عليه وسلم نَبِيًّا.",
-    repetition: "ثلاث مرات", // As per common understanding, though user input was ambiguous
-    targetCount: 3,
+    repetition: "مرة واحدة (أو ثلاث مرات في بعض الروايات)", // Adjusted based on request
+    targetCount: 1,
     source: "سنن أبي داود"
   },
   {
@@ -134,14 +134,14 @@ const morningAdhkarSupplications: Supplication[] = [
     id: 'morning_subhanallah_bihamdihi_adada_khalqihi',
     categoryKey: 'morning_adhkar',
     arabicText: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ: عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ.",
-    repetition: "ثلاث مرات",
-    targetCount: 3,
+    repetition: "مرة واحدة (أو ثلاث مرات في بعض الروايات)", // Adjusted based on request
+    targetCount: 1,
     source: "صحيح مسلم"
   },
   {
     id: 'morning_astaghfirullah_100',
     categoryKey: 'morning_adhkar',
-    arabicText: "أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ.", // Often "أستغفر الله" but adding "وأتوب إليه" is common
+    arabicText: "أَسْتَغْفِرُ اللَّهَ.",
     repetition: "مائة مرة",
     targetCount: 100,
     source: "صحيح البخاري"
@@ -185,12 +185,12 @@ const eveningAdhkarSupplications: Supplication[] = [
     id: 'evening_la_ilaha_illallah_100',
     categoryKey: 'evening_adhkar',
     arabicText: "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
-    repetition: "مائة مرة", // Or 10 times if that's the intended Sunnah for evening
+    repetition: "مائة مرة",
     targetCount: 100,
-    source: "متفق عليه (لفضل الذكر بشكل عام، وتوجد روايات بعشر مرات للمساء)"
+    source: "متفق عليه"
   },
   {
-    id: 'evening_askuka_alafiyah', // Same as morning
+    id: 'evening_askuka_alafiyah',
     categoryKey: 'evening_adhkar',
     arabicText: "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَافِيَةَ فِي الدُّنْيَا وَالآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي، وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي.",
     repetition: "مرة واحدة",
@@ -198,7 +198,7 @@ const eveningAdhkarSupplications: Supplication[] = [
     source: "صحيح ابن ماجه"
   },
   {
-    id: 'evening_aalim_alghayb', // Same as morning
+    id: 'evening_aalim_alghayb',
     categoryKey: 'evening_adhkar',
     arabicText: "اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَالأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَى نَفْسِي سُوءًا، أَوْ أَجُرَّهُ إِلَى مُسْلِمٍ.",
     repetition: "مرة واحدة",
@@ -206,7 +206,7 @@ const eveningAdhkarSupplications: Supplication[] = [
     source: "صحيح الترمذي"
   },
   {
-    id: 'evening_aafini_badani', // Same as morning
+    id: 'evening_aafini_badani',
     categoryKey: 'evening_adhkar',
     arabicText: "اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لاَ إِلَهَ إِلاَّ أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لاَ إِلَهَ إِلاَّ أَنْتَ.",
     repetition: "ثلاث مرات",
@@ -214,17 +214,17 @@ const eveningAdhkarSupplications: Supplication[] = [
     source: "سنن أبي داود"
   },
   {
-    id: 'evening_bismillah_alladhi_la_yadurr', // Same as morning
+    id: 'evening_bismillah_alladhi_la_yadurr',
     categoryKey: 'evening_adhkar',
     arabicText: "بِسْمِ اللَّهِ الَّذِي لاَ يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الأَرْضِ وَلاَ فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ.",
     repetition: "ثلاث مرات",
     targetCount: 3,
     source: "سنن الترمذي"
   },
-   { // Combined "سبحان الله، الحمد لله، الله أكبر" into one card for evening too
-    id: 'evening_tasbih_tahmid_takbir_100',
+  {
+    id: 'evening_subhanallah_alhamdulillah_allahuakbar_100',
     categoryKey: 'evening_adhkar',
-    arabicText: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ (مائة مرة)، الْحَمْدُ لِلَّهِ (مائة مرة)، اللَّهُ أَكْبَرُ (مائة مرة).",
+    arabicText: "سُبْحَانَ اللَّهِ، الْحَمْدُ لِلَّهِ، اللَّهُ أَكْبَرُ.",
     repetition: "مائة مرة لكل ذكر",
     targetCount: 100,
     source: "أذكار المساء"
@@ -262,105 +262,287 @@ const eveningAdhkarSupplications: Supplication[] = [
     source: "القرآن الكريم - سورة الناس (من قرأهن حين يمسي وحين يصبح كفته من كل شيء)"
   },
   {
-    id: 'evening_amanarrasool',
-    categoryKey: 'evening_adhkar',
-    arabicText: "آمَنَ الرَّسُولُ بِمَا أُنْزِلَ إِلَيْهِ مِنْ رَبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ رُسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ. لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَّسِينَآ أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ.",
-    repetition: "مرة واحدة",
-    targetCount: 1,
-    source: "القرآن الكريم - سورة البقرة، الآيات 285-286 (من قرأهما في ليلة كفتاه)"
-  },
-  {
     id: 'evening_audhu_bikalimatillah',
     categoryKey: 'evening_adhkar',
     arabicText: "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ.",
     repetition: "ثلاث مرات",
     targetCount: 3,
     source: "صحيح مسلم"
+  },
+  {
+    id: 'evening_amanarrasool', // Kept as it's important
+    categoryKey: 'evening_adhkar',
+    arabicText: "آمَنَ الرَّسُولُ بِمَا أُنْزِلَ إِلَيْهِ مِنْ رَبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ رُسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ. لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَّسِينَآ أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "القرآن الكريم - سورة البقرة، الآيات 285-286 (من قرأهما في ليلة كفتاه)"
   }
 ];
 
 const patientDuaSupplications: Supplication[] = [
   {
-    id: 'patient_adhhibil_bas',
+    id: 'patient_adhhibil_bas_shifa',
     categoryKey: 'patient_dua',
-    arabicText: "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ، اشْفِهِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا.",
-    repetition: "سبع مرات",
-    targetCount: 7,
-    source: "صحيح البخاري"
-  },
-  {
-    id: 'patient_bismillah_turbatu_ardina',
-    categoryKey: 'patient_dua',
-    arabicText: "بِسْمِ اللهِ، تُرْبَةُ أَرْضِنَا، بِرِيقَةِ بَعْضِنَا، يُشْفَى سَقِيمُنَا، بِإِذْنِ رَبِّنَا.",
-    repetition: "مرة واحدة",
+    arabicText: "أَذْهِبِ البَاسَ، رَبَّ النَّاسِ، اشْفِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا.",
+    repetition: "مرة واحدة أو أكثر",
     targetCount: 1,
     source: "متفق عليه"
+  },
+  {
+    id: 'patient_ruqyah_sharعية',
+    categoryKey: 'patient_dua',
+    arabicText: "بِسْمِ اللهِ أَرْقِيكَ، مِنْ كُلِّ شَيْءٍ يُؤْذِيكَ، مِنْ شَرِّ كُلِّ نَفْسٍ أَوْ عَيْنِ حَاسِدٍ، اللهُ يَشْفِيكَ، بِسْمِ اللهِ أَرْقِيكَ.",
+    repetition: "مرة واحدة أو أكثر", // Original had "الله يشفيك" then "بسم الله أرقيك" again, combined for clarity
+    targetCount: 1,
+    source: "رواه مسلم"
+  },
+  {
+    id: 'patient_visit_dua',
+    categoryKey: 'patient_dua',
+    arabicText: "لَا بَأْسَ، طَهُورٌ إِنْ شَاءَ اللهُ.",
+    repetition: "مرة واحدة عند زيارة المريض",
+    targetCount: 1,
+    source: "رواه البخاري"
+  },
+  {
+    id: 'patient_allahumma_rabba_nas_mudhhibal_bas',
+    categoryKey: 'patient_dua',
+    arabicText: "اللَّهُمَّ رَبَّ النَّاسِ، مُذْهِبَ الْبَاسِ، اشْفِهِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ.", // Note: This is very similar to the first one, user might have intended a slight variation or repetition
+    repetition: "مرة واحدة أو أكثر",
+    targetCount: 1,
+    source: "رواه البخاري ومسلم"
+  },
+  {
+    id: 'patient_protection_from_disease',
+    categoryKey: 'patient_dua',
+    arabicText: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبَرَصِ، وَالْجُنُونِ، وَالْجُذَامِ، وَمِنْ سَيِّئِ الْأَسْقَامِ.",
+    repetition: "مرة واحدة",
+    targetCount: 1,
+    source: "رواه أبو داود وصححه الألباني"
+  },
+  {
+    id: 'patient_hand_on_forehead_dua',
+    categoryKey: 'patient_dua',
+    arabicText: "اللَّهُمَّ اشْفِ عَبْدَكَ، يَنْكَأُ لَكَ عَدُوًّا، أَوْ يَمْشِي لَكَ إِلَى صَلَاةٍ.",
+    repetition: "مرة واحدة عند وضع اليد",
+    targetCount: 1,
+    source: "رواه أبو داود وحسنه الألباني"
+  },
+  {
+    id: 'patient_quran_ayat_shifa_1',
+    categoryKey: 'patient_dua',
+    arabicText: "وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ",
+    repetition: "قراءة مع التدبر",
+    targetCount: 1,
+    source: "سورة الشعراء: 80"
+  },
+  {
+    id: 'patient_quran_ayat_shifa_2',
+    categoryKey: 'patient_dua',
+    arabicText: "وَنُنَزِّلُ مِنَ الْقُرْآنِ مَا هُوَ شِفَاءٌ وَرَحْمَةٌ لِّلْمُؤْمِنِينَ",
+    repetition: "قراءة مع التدبر",
+    targetCount: 1,
+    source: "سورة الإسراء: 82"
+  },
+  {
+    id: 'patient_general_shifa_dua',
+    categoryKey: 'patient_dua',
+    arabicText: "اللَّهُمَّ اشْفِهِ شِفَاءً لَا يُغَادِرُ سَقَمًا، وَعَافِهِ عَافِيَةً لَا تُنْزِعُ صِحَّةً، وَارْزُقْهُ الْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ.",
+    repetition: "مرة واحدة أو أكثر",
+    targetCount: 1,
+    source: "دعاء عام"
   }
+  // Note: Reading Surah Al-Fatihah is a practice, not a specific du'a text to list here in the same way.
 ];
 
 const deceasedDuaSupplications: Supplication[] = [
   {
-    id: 'deceased_ighfir_lahu',
+    id: 'deceased_hearing_news_dua',
     categoryKey: 'deceased_dua',
-    arabicText: "اللَّهُمَّ اغْفِرْ لَهُ وَارْحَمْهُ، وَعَافِهِ وَاعْفُ عَنْهُ، وَأَكْرِمْ نُزُلَهُ، وَوَسِّعْ مُدْخَلَهُ، وَاغْسِلْهُ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ، وَنَقِّهِ مِنَ الْخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ، وَأَبْدِلْهُ دَارًا خَيْرًا مِنْ دَارِهِ، وَأَهْلًا خَيْرًا مِنْ أَهْلِهِ، وَزَوْجًا خَيْرًا مِنْ زَوْجِهِ، وَأَدْخِلْهُ الْجَنَّةَ، وَأَعِذْهُ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ النَّارِ.",
-    repetition: "مرة واحدة",
+    arabicText: "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ، اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي، وَاخْلُفْ لِي خَيْرًا مِنْهَا.",
+    repetition: "عند سماع خبر الوفاة",
     targetCount: 1,
-    source: "صحيح مسلم"
+    source: "رواه مسلم"
   },
+  {
+    id: 'deceased_after_burial_dua',
+    categoryKey: 'deceased_dua',
+    arabicText: "اللَّهُمَّ اغْفِرْ لَهُ، وَارْفَعْ دَرَجَتَهُ فِي الْمَهْدِيِّينَ، وَاخْلُفْهُ فِي عَقِبِهِ فِي الْغَابِرِينَ، وَاغْفِرْ لَنَا وَلَهُ يَا رَبَّ الْعَالَمِينَ.",
+    repetition: "بعد الدفن",
+    targetCount: 1,
+    source: "رواه مسلم"
+  },
+  {
+    id: 'deceased_prayer_dua',
+    categoryKey: 'deceased_dua',
+    arabicText: "اللَّهُمَّ اغْفِرْ لِحَيِّنَا وَمَيِّتِنَا، وَشَاهِدِنَا وَغَائِبِنَا، وَصَغِيرِنَا وَكَبِيرِنَا، وَذَكَرِنَا وَأُنْثَانَا.",
+    repetition: "في الصلاة على الميت",
+    targetCount: 1,
+    source: "رواه أبو داود"
+  },
+  {
+    id: 'deceased_visiting_graves_dua',
+    categoryKey: 'deceased_dua',
+    arabicText: "السَّلَامُ عَلَيْكُمْ أَهْلَ الدِّيَارِ مِنَ الْمُؤْمِنِينَ وَالْمُسْلِمِينَ، وَإِنَّا إِنْ شَاءَ اللَّهُ بِكُمْ لَلَاحِقُونَ، اللَّهُمَّ اغْفِرْ لِأَهْلِ بَقِيعِ الْغَرْقَدِ.", // Note: "أسأل الله لنا ولكم العافية" is often part of this dua. User provided version is also common.
+    repetition: "عند زيارة القبور",
+    targetCount: 1,
+    source: "رواه مسلم"
+  },
+  {
+    id: 'deceased_general_dua_for_deceased',
+    categoryKey: 'deceased_dua',
+    arabicText: "اللَّهُمَّ اغْفِرْ لَهُ وَارْحَمْهُ، وَعَافِهِ وَاعْفُ عَنْهُ، وَأَكْرِمْ نُزُلَهُ، وَوَسِّعْ مُدْخَلَهُ، وَاغْسِلْهُ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ، وَنَقِّهِ مِنَ الْخَطَايَا كَمَا نَقَّيْتَ الثَّوْبَ الْأَبْيَضَ مِنَ الدَّنَسِ.",
+    repetition: "دعاء عام للميت",
+    targetCount: 1,
+    source: "متفق عليه"
+  },
+  {
+    id: 'deceased_dua_for_tathbeet',
+    categoryKey: 'deceased_dua',
+    arabicText: "اللَّهُمَّ ثَبِّتْهُ عِنْدَ السُّؤَالِ، وَاجْعَلْ قَبْرَهُ رَوْضَةً مِنْ رِيَاضِ الْجَنَّةِ، وَلَا تَجْعَلْهُ حُفْرَةً مِنْ حُفَرِ النَّارِ.",
+    repetition: "للتثبيت عند السؤال",
+    targetCount: 1,
+    source: "دعاء مأثور"
+  },
+  {
+    id: 'deceased_dua_for_rahmah_maghfirah_specific',
+    categoryKey: 'deceased_dua',
+    arabicText: "اللَّهُمَّ إِنَّ فُلَانَ بْنَ فُلَانٍ فِي ذِمَّتِكَ وَحَبْلِ جِوَارِكَ، فَقِهِ مِنْ فِتْنَةِ الْقَبْرِ وَعَذَابِ النَّارِ، وَأَنْتَ أَهْلُ الْوَفَاءِ وَالْحَقِّ، فَاغْفِرْ لَهُ وَارْحَمْهُ، إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.",
+    repetition: "يذكر اسم المتوفى",
+    targetCount: 1,
+    source: "دعاء مأثور"
+  },
+  {
+    id: 'deceased_dua_general_for_all_muslims',
+    categoryKey: 'deceased_dua',
+    arabicText: "اللَّهُمَّ اغْفِرْ لِأَمْوَاتِنَا وَأَمْوَاتِ الْمُسْلِمِينَ، وَارْحَمْهُمْ، وَعَافِهِمْ، وَاعْفُ عَنْهُمْ، وَأَكْرِمْ نُزُلَهُمْ، وَوَسِّعْ مُدْخَلَهُمْ.",
+    repetition: "دعاء عام لجميع موتى المسلمين",
+    targetCount: 1,
+    source: "دعاء عام"
+  }
+  // Note: Reading Quran and gifting Thawab is a practice.
 ];
 
 const travelDuaSupplications: Supplication[] = [
   {
-    id: 'travel_subhanalladhi',
+    id: 'travel_leaving_home',
     categoryKey: 'travel_dua',
-    arabicText: "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ. اللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَذَا الْبِرَّ وَالتَّقْوَى، وَمِنَ الْعَمَلِ مَا تَرْضَى، اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا وَاطْوِ عَنَّا بُعْدَهُ، اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ، وَالْخَلِيفَةُ فِي الْأَهْلِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ، وَكَآبَةِ الْمَنْظَرِ، وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالْأَهْلِ.",
-    repetition: "مرة واحدة عند بدء السفر",
+    arabicText: "بِسْمِ اللهِ، تَوَكَّلْتُ عَلَى اللهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ.",
+    repetition: "عند الخروج من المنزل",
     targetCount: 1,
-    source: "صحيح مسلم"
+    source: "رواه الترمذي وصححه الألباني"
   },
   {
-    id: 'travel_return',
+    id: 'travel_riding_vehicle',
     categoryKey: 'travel_dua',
-    arabicText: "آيِبُونَ، تائِبُونَ، عابِدُونَ، لِرَبِّنا حامِدُونَ.",
+    arabicText: "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ.",
+    repetition: "عند ركوب وسيلة النقل",
+    targetCount: 1,
+    source: "القرآن الكريم - الزخرف: 13-14"
+  },
+  {
+    id: 'travel_takbeer_ascending',
+    categoryKey: 'travel_dua',
+    arabicText: "اللهُ أَكْبَرُ، اللهُ أَكْبَرُ، اللهُ أَكْبَرُ، سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ.",
+    repetition: "عند الصعود في المركبة",
+    targetCount: 1,
+    source: "رواه مسلم"
+  },
+  {
+    id: 'travel_starting_journey',
+    categoryKey: 'travel_dua',
+    arabicText: "اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا، وَاطْوِ عَنَّا بُعْدَهُ، اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ، وَالْخَلِيفَةُ فِي الْأَهْلِ.",
+    repetition: "عند التحرك للسفر",
+    targetCount: 1,
+    source: "رواه مسلم"
+  },
+  {
+    id: 'travel_entering_place',
+    categoryKey: 'travel_dua',
+    arabicText: "أَعُوذُ بِكَلِمَاتِ اللهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ.",
+    repetition: "عند نزول منزل أو بلد",
+    targetCount: 1,
+    source: "رواه مسلم"
+  },
+  {
+    id: 'travel_returning_from_journey',
+    categoryKey: 'travel_dua',
+    arabicText: "آيِبُونَ، تَائِبُونَ، عَابِدُونَ، لِرَبِّنَا حَامِدُونَ.",
     repetition: "عند العودة من السفر",
     targetCount: 1,
-    source: "صحيح مسلم"
+    source: "رواه البخاري"
+  },
+  {
+    id: 'travel_entering_village_city',
+    categoryKey: 'travel_dua',
+    arabicText: "اللَّهُمَّ رَبَّ السَّمَوَاتِ السَّبْعِ وَمَا أَظْلَلْنَ، وَرَبَّ الأَرَضِينَ السَّبْعِ وَمَا أَقْلَلْنَ، وَرَبَّ الشَّيَاطِينِ وَمَا أَضْلَلْنَ، وَرَبَّ الرِّيَاحِ وَمَا ذَرَيْنَ، أَسْأَلُكَ خَيْرَ هَذِهِ الْقَرْيَةِ، وَخَيْرَ أَهْلِهَا، وَخَيْرَ مَا فِيهَا، وَأَعُوذُ بِكَ مِنْ شَرِّهَا، وَشَرِّ أَهْلِهَا، وَشَرِّ مَا فِيهَا.", // User provided a shorter version "اللَّهُمَّ ارْزُقْنَا بِهَا خَيْرًا، وَاصْرِفْ عَنَّا شَرَّهَا", the longer one is more common for entering a village/city.
+    repetition: "عند دخول القرية أو المدينة",
+    targetCount: 1,
+    source: "رواه الحاكم وصححه ووافقه الذهبي" // Source for the longer version
+  },
+  {
+    id: 'travel_fear_during_journey',
+    categoryKey: 'travel_dua',
+    arabicText: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ، وَكَآبَةِ الْمَنْظَرِ، وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالْأَهْلِ.",
+    repetition: "عند الخوف في السفر",
+    targetCount: 1,
+    source: "رواه مسلم"
+  },
+  {
+    id: 'travel_night_dua',
+    categoryKey: 'travel_dua',
+    arabicText: "يَا أَرْضُ، رَبِّي وَرَبُّكِ اللهُ، أَعُوذُ بِاللهِ مِنْ شَرِّكِ وَشَرِّ مَا فِيكِ وَشَرِّ مَا خُلِقَ فِيكِ وَشَرِّ مَا يَدُبُّ عَلَيْكِ.",
+    repetition: "دعاء الليل في السفر",
+    targetCount: 1,
+    source: "رواه أبو داود وصححه الألباني"
+  },
+  {
+    id: 'travel_returning_to_family',
+    categoryKey: 'travel_dua',
+    arabicText: "اللَّهُمَّ اجْعَلْ لَنَا فِي سَفَرِنَا هَذَا بَرَكَةً وَتَقْوَىً، وَمِنَ الْعَمَلِ مَا تَرْضَى. اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ، وَالْخَلِيفَةُ فِي الأَهْلِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ، وَكَآبَةِ الْمَنْظَرِ، وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالأَهْلِ وَالْوَلَدِ.", // Combined with parts of other travel duas for completeness on return
+    repetition: "عند العودة إلى الأهل",
+    targetCount: 1,
+    source: "مجموع من أدعية السفر"
   }
+  // Notes on tasbeeh, sadaqah, ayat al kursi are practices.
 ];
 
 const istikharaDuaSupplications: Supplication[] = [
   {
     id: 'istikhara_main',
     categoryKey: 'istikhara_dua',
-    arabicText: "اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ، وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ، وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ، فَإِنَّكَ تَقْدِرُ وَلا أَقْدِرُ، وَتَعْلَمُ وَلا أَعْلَمُ، وَأَنْتَ عَلامُ الْغُيُوبِ. اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ - وَيُسَمِّي حَاجَتَهُ - خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي، فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي، ثُمَّ بَارِكْ لِي فِيهِ. وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي، فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ، وَاقْدُرْ لِي الْخَيْرَ حَيْثُ كَانَ، ثُمَّ أَرْضِنِي بِهِ.",
+    arabicText: "اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ، وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ، وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ، فَإِنَّكَ تَقْدِرُ وَلا أَقْدِرُ، وَتَعْلَمُ وَلا أَعْلَمُ، وَأَنْتَ عَلامُ الْغُيُوبِ. اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ - وَيُسَمِّي حَاجَتَهُ - خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي (أَوْ قَالَ: عَاجِلِ أَمْرِي وَآجِلِهِ)، فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي، ثُمَّ بَارِكْ لِي فِيهِ. وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي (أَوْ قَالَ: عَاجِلِ أَمْرِي وَآجِلِهِ)، فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ، وَاقْدُرْ لِي الْخَيْرَ حَيْثُ كَانَ، ثُمَّ أَرْضِنِي بِهِ.",
     repetition: "مرة واحدة عند الحاجة للاستخارة",
     targetCount: 1,
     source: "صحيح البخاري"
   }
 ];
 
-// variousDuaSupplications array is removed as per user request to delete the section.
-// If these duas need to be moved elsewhere, this should be handled.
 
 export const adhkarCategories: AdhkarCategory[] = [
-  { id: 'morning_adhkar', title: 'أذكار الصباح', supplications: morningAdhkarSupplications },
-  { id: 'evening_adhkar', title: 'أذكار المساء', supplications: eveningAdhkarSupplications },
-  { id: 'travel_dua', title: 'دعاء السفر', supplications: travelDuaSupplications },
-  { id: 'istikhara_dua', title: 'دعاء الاستخارة', supplications: istikharaDuaSupplications },
-  { id: 'patient_dua', title: 'دعاء للمريض', supplications: patientDuaSupplications },
-  { id: 'deceased_dua', title: 'دعاء للميت', supplications: deceasedDuaSupplications },
-  // The "various_dua" categories are removed
+  { id: 'morning_adhkar', title: 'أذكار الصباح', supplications: morningAdhkarSupplications, iconName: 'Sunrise' },
+  { id: 'evening_adhkar', title: 'أذكار المساء', supplications: eveningAdhkarSupplications, iconName: 'Sunset' },
+  { id: 'travel_dua', title: 'دعاء السفر', supplications: travelDuaSupplications, iconName: 'Plane' },
+  { id: 'istikhara_dua', title: 'دعاء الاستخارة', supplications: istikharaDuaSupplications, iconName: 'SearchCheck' },
+  { id: 'patient_dua', title: 'دعاء للمريض', supplications: patientDuaSupplications, iconName: 'HeartPulse' },
+  { id: 'deceased_dua', title: 'دعاء للميت', supplications: deceasedDuaSupplications, iconName: 'BedDouble' },
 ];
 
-export const allSupplications: Supplication[] = [
-  ...morningAdhkarSupplications,
-  ...eveningAdhkarSupplications,
-  ...patientDuaSupplications,
-  ...deceasedDuaSupplications,
-  ...travelDuaSupplications,
-  ...istikharaDuaSupplications,
-  // ...variousDuaSupplications, // This would now be empty or removed
-];
+// Helper to get all supplications or by category for page generation
+export const getSupplicationsByCategory = (categoryId: string): Supplication[] => {
+  const category = adhkarCategories.find(cat => cat.id === categoryId);
+  return category ? category.supplications : [];
+};
+
+export const getCategoryById = (categoryId: string): AdhkarCategory | undefined => {
+  return adhkarCategories.find(cat => cat.id === categoryId);
+};
+
+
+export const allSupplications: Supplication[] = adhkarCategories.reduce((acc, category) => {
+  return acc.concat(category.supplications);
+}, [] as Supplication[]);
+
 
 export const tasbihOptions: TasbihOption[] = [
   { id: 'subhanallah', text: 'سبحان الله' },
