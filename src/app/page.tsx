@@ -19,10 +19,10 @@ export default function Home() {
   const patientDua = adhkarCategories.find(cat => cat.id === 'patient_dua');
   const deceasedDua = adhkarCategories.find(cat => cat.id === 'deceased_dua');
   
-  // For "أدعية متنوعة" section, we can group them or list them.
-  const rizqDua = adhkarCategories.find(cat => cat.id === 'various_dua_rizq');
-  const hammDua = adhkarCategories.find(cat => cat.id === 'various_dua_hamm');
-  const generalDua = adhkarCategories.find(cat => cat.id === 'various_dua_general');
+  // Removed "various_dua" categories as the section is deleted
+  // const rizqDua = adhkarCategories.find(cat => cat.id === 'various_dua_rizq');
+  // const hammDua = adhkarCategories.find(cat => cat.id === 'various_dua_hamm');
+  // const generalDua = adhkarCategories.find(cat => cat.id === 'various_dua_general');
 
 
   return (
@@ -39,23 +39,7 @@ export default function Home() {
           {patientDua && <SupplicationList category={patientDua} />}
           {deceasedDua && <SupplicationList category={deceasedDua} />}
 
-          {/* Combined "Various Du'as" Section Title */}
-          {(rizqDua || hammDua || generalDua) && (
-            <section id="various-dua-section" className="py-8 scroll-mt-20">
-              <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-8 text-primary relative pb-2
-                              after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 
-                              after:w-24 after:h-1 after:bg-accent after:rounded-full">
-                  أدعية متنوعة
-                </h2>
-              </div>
-            </section>
-          )}
-          {/* Sub-sections for various duas */}
-          {rizqDua && <SupplicationList category={rizqDua} />}
-          {hammDua && <SupplicationList category={hammDua} />}
-          {generalDua && <SupplicationList category={generalDua} />}
-          {/* Add other various dua categories here as needed */}
+          {/* "Various Du'as" Section Removed */}
 
 
           <DigitalTasbih />

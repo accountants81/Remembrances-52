@@ -4,93 +4,93 @@
 
 @layer base {
   :root {
-    /* New Dark theme variables (default) - Focus on attractive, beautiful colors */
-    --background: 220 30% 8%; /* Deep, dark sapphire/midnight blue */
-    --foreground: 210 20% 95%; /* Soft, very light grey for readability */
+    /* New Dark theme variables (default) - Focus on attractive, beautiful colors with "لمعة" */
+    --background: 220 40% 5%; /* Deeper, richer midnight blue */
+    --foreground: 210 25% 96%; /* Brighter, very light grey for high contrast */
     
-    --card: 220 30% 12%; /* Slightly lighter than background, but still dark blue */
-    --card-foreground: 210 20% 95%;
+    --card: 220 35% 9%; /* Slightly lighter than background, refined dark blue */
+    --card-foreground: 210 25% 96%;
     
-    --popover: 220 30% 10%; /* Similar to card, maybe a bit darker */
-    --popover-foreground: 210 20% 95%;
+    --popover: 220 35% 7%; /* Darker popover for depth */
+    --popover-foreground: 210 25% 96%;
     
-    --primary: 255 70% 75%; /* Vibrant Amethyst/Deep Lilac - for "لمعة" - increased lightness */
-    --primary-foreground: 255 20% 15%; /* Dark contrast for primary text */
+    --primary: 260 75% 70%; /* Vibrant, luminous Purple/Deep Indigo - for "لمعة" */
+    --primary-foreground: 260 20% 98%; /* Very light text on primary */
     
-    --secondary: 190 60% 65%; /* Bright, calming Teal/Cyan - increased lightness */
-    --secondary-foreground: 190 25% 10%;
+    --secondary: 195 70% 60%; /* Bright, glowing Cyan/Azure - for "لمعة" */
+    --secondary-foreground: 195 25% 10%;
     
-    --muted: 220 20% 25%; /* Muted version of the dark blue */
-    --muted-foreground: 210 15% 70%; /* Softer grey for muted text */
+    --muted: 220 25% 20%; /* Softer muted blue */
+    --muted-foreground: 210 20% 75%; /* Lighter muted text */
     
-    --accent: 45 90% 65%; /* Radiant Gold/Warm Orange - for "لمعة" and highlight - increased lightness */
-    --accent-foreground: 45 30% 10%; /* Dark text on accent */
+    --accent: 50 95% 60%; /* Radiant, glowing Gold/Bright Yellow - for "لمعة" and highlight */
+    --accent-foreground: 50 30% 5%; /* Dark, rich text on accent */
     
-    --destructive: 0 75% 60%; /* Strong, clear Red */
+    --destructive: 0 80% 65%; /* Strong, vivid Red */
     --destructive-foreground: 0 0% 98%;
     
-    --border: 220 25% 20%; /* Subtle border, related to background/card */
-    --input: 220 25% 22%; /* Input fields, slightly lighter than border */
-    --ring: 255 70% 70%; /* Ring color based on new primary - slightly adjusted */
+    --border: 220 30% 15%; /* More defined border, related to background/card */
+    --input: 220 30% 18%; /* Input fields, slightly lighter than border */
+    --ring: 260 75% 65%; /* Ring color based on new primary - slightly adjusted for "لمعة" */
     
-    --chart-1: 45 90% 65%; /* Accent Gold (adjusted) */
-    --chart-2: 190 60% 65%; /* Secondary Teal (adjusted) */
-    --chart-3: 255 70% 75%; /* Primary Amethyst (adjusted) */
-    --chart-4: 210 50% 70%; /* A lighter, desaturated blue */
-    --chart-5: 330 70% 65%; /* A complementary Pink/Rose */
+    --chart-1: 50 95% 60%; /* Accent Gold (adjusted) */
+    --chart-2: 195 70% 60%; /* Secondary Cyan (adjusted) */
+    --chart-3: 260 75% 70%; /* Primary Purple (adjusted) */
+    --chart-4: 210 60% 75%; /* A lighter, brighter desaturated blue */
+    --chart-5: 335 75% 70%; /* A complementary bright Pink/Magenta */
 
-    --radius: 0.75rem; /* Slightly more rounded corners */
+    --radius: 0.8rem; /* Slightly increased radius for a softer look */
 
     /* Sidebar specific colors for dark theme */
-    --sidebar-background: 220 30% 10%; 
-    --sidebar-foreground: 210 20% 92%;
-    --sidebar-primary: 255 70% 72%; /* Primary color for sidebar highlights (adjusted) */
+    --sidebar-background: 220 38% 7%; 
+    --sidebar-foreground: 210 25% 94%;
+    --sidebar-primary: 260 75% 68%; 
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 45 90% 62%; /* Accent color for sidebar (adjusted) */
-    --sidebar-accent-foreground: 210 20% 92%;
-    --sidebar-border: 220 25% 18%;
-    --sidebar-ring: 255 70% 68%; /* (adjusted) */
+    --sidebar-accent: 50 95% 58%; 
+    --sidebar-accent-foreground: 210 25% 94%;
+    --sidebar-border: 220 30% 14%;
+    --sidebar-ring: 260 75% 63%; 
   }
 
   .light { 
-    /* Light theme variables - Brighter and more airy */
-    --background: 0 0% 98%; /* Almost white, very clean */
-    --foreground: 220 25% 15%; /* Dark blue/charcoal text for contrast */
+    /* Light theme variables - Brighter, cleaner and more airy with "لمعة" */
+    --background: 0 0% 100%; /* Pure white */
+    --foreground: 220 30% 10%; /* Darker, rich blue/charcoal text for excellent contrast */
     
-    --card: 0 0% 100%; /* White cards */
-    --card-foreground: 220 25% 15%;
+    --card: 0 0% 97%; /* Very light grey, almost white cards */
+    --card-foreground: 220 30% 10%;
     
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 15%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 220 30% 10%;
     
-    --primary: 250 65% 65%; /* A clear, friendly Blue/Violet - increased lightness */
+    --primary: 255 70% 60%; /* Clear, luminous Blue/Violet - for "لمعة" */
     --primary-foreground: 0 0% 100%; 
     
-    --secondary: 180 55% 60%; /* Soft Cyan/Turquoise - increased lightness */
-    --secondary-foreground: 180 25% 10%;
+    --secondary: 185 65% 55%; /* Soft, glowing Cyan/Turquoise - for "لمعة" */
+    --secondary-foreground: 185 25% 5%;
     
-    --muted: 220 20% 90%; /* Very light grey for muted elements */
-    --muted-foreground: 220 15% 45%;
+    --muted: 220 25% 92%; /* Lighter grey for muted elements */
+    --muted-foreground: 220 20% 50%;
     
-    --accent: 35 85% 60%; /* Sunny Orange/Yellow accent - increased lightness */
-    --accent-foreground: 35 30% 10%; 
+    --accent: 40 90% 55%; /* Sunny, glowing Orange/Yellow accent - for "لمعة" */
+    --accent-foreground: 40 30% 5%; 
     
-    --destructive: 0 70% 55%; 
+    --destructive: 0 75% 50%; 
     --destructive-foreground: 0 0% 98%;
     
-    --border: 220 20% 85%; 
-    --input: 220 20% 88%; 
-    --ring: 250 65% 60%; /* (adjusted) */
+    --border: 220 25% 88%; 
+    --input: 220 25% 90%; 
+    --ring: 255 70% 55%; /* (adjusted for "لمعة") */
     
     /* Sidebar specific colors for light theme */
-    --sidebar-background: 220 20% 96%; 
-    --sidebar-foreground: 220 25% 20%;
-    --sidebar-primary: 250 65% 62%; /* (adjusted) */
+    --sidebar-background: 220 25% 97%; 
+    --sidebar-foreground: 220 30% 15%;
+    --sidebar-primary: 255 70% 58%; 
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 35 85% 62%; /* (adjusted) */
-    --sidebar-accent-foreground: 35 30% 15%;
-    --sidebar-border: 220 20% 82%;
-    --sidebar-ring: 250 65% 58%; /* (adjusted) */
+    --sidebar-accent: 40 90% 52%; 
+    --sidebar-accent-foreground: 40 30% 10%;
+    --sidebar-border: 220 25% 85%;
+    --sidebar-ring: 255 70% 53%; 
   }
 }
 

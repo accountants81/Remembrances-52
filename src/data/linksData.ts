@@ -25,10 +25,10 @@ export const linkCategories: LinkCategory[] = [
         description: 'بودكاست ديني متنوع' 
       },
       { 
-        id: 'link_mp3_quran_app', 
-        text: 'القرآن الكريم بأصوات متعددة (تطبيق)', 
-        url: 'https://play.google.com/store/apps/details?id=my.smartech.mp3quran', 
-        description: 'تطبيق للاستماع للقرآن الكريم بأصوات مختلفة' 
+        id: 'link_mp3_quran_bot', // Changed ID to reflect new link
+        text: 'القرآن الكريم بأصوات متعددة (بوت تيليجرام)', // Updated text
+        url: 'https://t.me/AAAMO2_bot?start=33989d3de6fcecfeed109956ffdf83d4', // Updated URL
+        description: 'بوت تيليجرام للاستماع للقرآن الكريم بأصوات مختلفة' // Updated description
       },
       { 
         id: 'link_hijri_calendar_app', 
@@ -49,7 +49,13 @@ export const linkCategories: LinkCategory[] = [
     title: 'روابط إسلامية مفيدة',
     links: [
       { 
-        id: 'link_islamqa', 
+        id: 'link_islamweb_tafsir', // Swapped with islamqa
+        text: 'تفسير القرآن الشامل (إسلام ويب)', 
+        url: 'https://islamweb.net/ar/library/index.php?page=bookcontents&id=51&bk_no=51&flag=1', 
+        description: 'تفسير مفصل للقرآن الكريم من موقع إسلام ويب' 
+      },
+      { 
+        id: 'link_islamqa', // Swapped with islamweb_tafsir
         text: 'فتاوى إسلامية موثوقة (سؤال وجواب)', 
         url: 'https://islamqa.info/ar', 
         description: 'فتاوى وأسئلة وأجوبة إسلامية شاملة' 
@@ -73,12 +79,6 @@ export const linkCategories: LinkCategory[] = [
         description: 'موسوعة الحديث النبوي الشريف' 
       },
       { 
-        id: 'link_islamweb_tafsir', 
-        text: 'تفسير القرآن الشامل (إسلام ويب)', 
-        url: 'https://islamweb.net/ar/library/index.php?page=bookcontents&id=51&bk_no=51&flag=1', 
-        description: 'تفسير مفصل للقرآن الكريم من موقع إسلام ويب' 
-      },
-      { 
         id: 'link_ibn_baz', 
         text: 'موقع الشيخ ابن باز', 
         url: 'https://binbaz.org.sa/', 
@@ -91,9 +91,9 @@ export const linkCategories: LinkCategory[] = [
         description: 'دروس ومحاضرات إسلامية' 
       },
       {
-        id: 'link_telegram_aaamo2_bot',
+        id: 'link_telegram_aaamo2_group', // Changed ID slightly to avoid conflict if AAAMO2_bot is used elsewhere
         text: 'مجموعة تيليجرام إسلامية',
-        url: 'https://t.me/AAAMO2_bot',
+        url: 'https://t.me/AAAMO2_bot', // User provided a bot link which might be intended for the group
         description: 'مجموعة تيليجرام لمحتوى إسلامي متنوع'
       }
     ],

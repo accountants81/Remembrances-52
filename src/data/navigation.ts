@@ -1,5 +1,5 @@
 import type { NavItem } from './types';
-import { Sunrise, Sunset, HeartPulse, BedDouble, VenetianMask, BookOpen, Link, CalendarDays, MessageCircleQuestion, AlertTriangle, ListChecks, Plane, SearchCheck } from 'lucide-react'; // Added Plane, SearchCheck
+import { Sunrise, Sunset, HeartPulse, BedDouble, VenetianMask, BookOpen, Link, CalendarDays, MessageCircleQuestion, AlertTriangle, Plane, SearchCheck } from 'lucide-react'; // ListChecks removed
 
 export const navItems: NavItem[] = [
   { id: 'welcome', label: 'مرحباً بكم', href: '#welcome-section' },
@@ -9,7 +9,7 @@ export const navItems: NavItem[] = [
   { id: 'istikhara-dua', label: 'دعاء الاستخارة', href: '#istikhara-dua-section', icon: SearchCheck },
   { id: 'patient-dua', label: 'دعاء للمريض', href: '#patient-dua-section', icon: HeartPulse },
   { id: 'deceased-dua', label: 'دعاء للميت', href: '#deceased-dua-section', icon: BedDouble },
-  { id: 'various-dua', label: 'أدعية متنوعة', href: '#various-dua-section', icon: ListChecks },
+  // { id: 'various-dua', label: 'أدعية متنوعة', href: '#various-dua-section', icon: ListChecks }, // Removed
   { id: 'tasbih', label: 'السبحة الإلكترونية', href: '#tasbih-section', icon: VenetianMask },
   { id: 'daily-wisdom', label: 'فائدة اليوم', href: '#daily-wisdom-section', icon: CalendarDays },
   { id: 'sins-warning', label: 'محاذير شرعية', href: '#sins-warning-section', icon: AlertTriangle },
