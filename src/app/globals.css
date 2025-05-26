@@ -5,26 +5,26 @@
 
 @layer base {
   :root {
-    /* Elegant Dark Theme with Gold/Bronze Accents */
+    /* Elegant Dark Theme with Teal/Silver Accents */
     --background: 220 20% 10%; /* Very Dark Desaturated Blue */
-    --foreground: 40 30% 90%; /* Light Warm Off-White/Pale Gold */
+    --foreground: 210 40% 95%; /* Light Cool Grey/Silver */
     
     --card: 220 20% 14%; /* Slightly Lighter Dark Blue for cards */
-    --card-foreground: 40 30% 90%;
+    --card-foreground: 210 40% 95%;
     
     --popover: 220 20% 8%;
-    --popover-foreground: 40 30% 90%;
+    --popover-foreground: 210 40% 95%;
     
-    --primary: 40 75% 60%; /* Rich, Slightly Muted Gold */
-    --primary-foreground: 220 20% 10%; /* Dark text on gold */
+    --primary: 180 70% 55%; /* Rich, Slightly Muted Teal */
+    --primary-foreground: 220 20% 10%; /* Dark text on teal */
     
-    --secondary: 180 60% 50%; /* Deep Teal/Cyan for a sophisticated secondary touch */
-    --secondary-foreground: 220 10% 95%; 
+    --secondary: 210 60% 50%; /* Deep Saphire Blue for a sophisticated secondary touch */
+    --secondary-foreground: 210 10% 95%; 
     
     --muted: 220 15% 30%; /* Darker muted color */
     --muted-foreground: 220 10% 70%; /* Lighter muted text */
     
-    --accent: 45 80% 70%; /* Brighter, Luminous Gold/Amber for "shine" */
+    --accent: 190 80% 70%; /* Brighter, Luminous Cyan/Light Teal for "shine" */
     --accent-foreground: 220 20% 10%;
     
     --destructive: 0 60% 55%; /* Deep, Elegant Red */
@@ -32,48 +32,48 @@
     
     --border: 220 15% 25%; /* Subtle border, slightly lighter than cards */
     --input: 220 15% 18%; 
-    --ring: 45 75% 65%; /* Gold for rings, matching primary hover */
+    --ring: 190 75% 65%; /* Cyan/Teal for rings, matching accent hover */
     
-    --chart-1: 40 75% 60%; /* Gold */
-    --chart-2: 180 60% 50%; /* Teal */
+    --chart-1: 180 70% 55%; /* Teal */
+    --chart-2: 210 60% 50%; /* Saphire Blue */
     --chart-3: 270 50% 60%; /* Regal Purple (example) */
     --chart-4: 0 60% 55%;   /* Red */
-    --chart-5: 210 50% 55%; /* Medium Blue */
+    --chart-5: 240 50% 65%; /* Medium-Dark Blue */
 
     --radius: 0.5rem;
 
     /* Sidebar specific colors for dark theme */
     --sidebar-background: 220 20% 12%; 
-    --sidebar-foreground: 40 30% 88%;
-    --sidebar-primary: 40 75% 65%; 
+    --sidebar-foreground: 210 30% 88%;
+    --sidebar-primary: 180 70% 60%; 
     --sidebar-primary-foreground: 220 20% 12%;
-    --sidebar-accent: 180 60% 55%; 
+    --sidebar-accent: 190 60% 55%; 
     --sidebar-accent-foreground: 220 10% 8%;
     --sidebar-border: 220 15% 22%;
-    --sidebar-ring: 40 75% 60%; 
+    --sidebar-ring: 180 70% 55%; 
   }
 
   .dark { 
     /* Keeping dark theme as the primary, so these are the same */
     --background: 220 20% 10%;
-    --foreground: 40 30% 90%;
+    --foreground: 210 40% 95%;
     
     --card: 220 20% 14%;
-    --card-foreground: 40 30% 90%;
+    --card-foreground: 210 40% 95%;
     
     --popover: 220 20% 8%;
-    --popover-foreground: 40 30% 90%;
+    --popover-foreground: 210 40% 95%;
     
-    --primary: 40 75% 60%;
+    --primary: 180 70% 55%;
     --primary-foreground: 220 20% 10%;
     
-    --secondary: 180 60% 50%;
-    --secondary-foreground: 220 10% 95%;
+    --secondary: 210 60% 50%;
+    --secondary-foreground: 210 10% 95%;
     
     --muted: 220 15% 30%;
     --muted-foreground: 220 10% 70%;
     
-    --accent: 45 80% 70%;
+    --accent: 190 80% 70%;
     --accent-foreground: 220 20% 10%;
     
     --destructive: 0 60% 55%;
@@ -81,22 +81,22 @@
     
     --border: 220 15% 25%;
     --input: 220 15% 18%;
-    --ring: 45 75% 65%;
+    --ring: 190 75% 65%;
     
-    --chart-1: 40 75% 60%;
-    --chart-2: 180 60% 50%;
+    --chart-1: 180 70% 55%;
+    --chart-2: 210 60% 50%;
     --chart-3: 270 50% 60%;
     --chart-4: 0 60% 55%;
-    --chart-5: 210 50% 55%;
+    --chart-5: 240 50% 65%;
 
     --sidebar-background: 220 20% 12%;
-    --sidebar-foreground: 40 30% 88%;
-    --sidebar-primary: 40 75% 65%;
+    --sidebar-foreground: 210 30% 88%;
+    --sidebar-primary: 180 70% 60%;
     --sidebar-primary-foreground: 220 20% 12%;
-    --sidebar-accent: 180 60% 55%;
+    --sidebar-accent: 190 60% 55%;
     --sidebar-accent-foreground: 220 10% 8%;
     --sidebar-border: 220 15% 22%;
-    --sidebar-ring: 40 75% 60%;
+    --sidebar-ring: 180 70% 55%;
   }
 }
 
@@ -147,18 +147,27 @@
 
 /* Custom scrollbar for better aesthetics with new theme */
 ::-webkit-scrollbar {
-  width: 12px; 
-  height: 12px;
+  width: 10px; 
+  height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(var(--background) / 0.8); 
+  background: hsl(var(--background) / 0.7); 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary) / 0.7); 
+  background: hsl(var(--primary) / 0.6); 
   border-radius: 10px;
-  border: 3px solid hsl(var(--background) / 0.8); 
+  border: 2px solid hsl(var(--background) / 0.7); 
 }
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--accent)); 
+}
+
+/* Ensure buttons and other interactive elements use the new primary/accent colors */
+.btn-primary {
+  @apply bg-primary text-primary-foreground hover:bg-primary/90;
+}
+
+.btn-accent {
+  @apply bg-accent text-accent-foreground hover:bg-accent/90;
 }
