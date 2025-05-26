@@ -5,98 +5,98 @@
 
 @layer base {
   :root {
-    /* Elegant Dark Theme with Teal/Silver Accents */
-    --background: 220 20% 10%; /* Very Dark Desaturated Blue */
-    --foreground: 210 40% 95%; /* Light Cool Grey/Silver */
+    /* Refined Dark Theme for Luxury & Shine */
+    --background: 220 20% 5%; /* Very Dark Blue, almost black */
+    --foreground: 210 40% 96%; /* Bright, clean light grey/white */
     
-    --card: 220 20% 14%; /* Slightly Lighter Dark Blue for cards */
-    --card-foreground: 210 40% 95%;
+    --card: 220 20% 10%; /* Slightly Lighter Dark Blue for cards */
+    --card-foreground: 210 40% 96%;
     
-    --popover: 220 20% 8%;
-    --popover-foreground: 210 40% 95%;
+    --popover: 220 20% 4%; /* Even darker for popovers */
+    --popover-foreground: 210 40% 96%;
     
-    --primary: 180 70% 55%; /* Rich, Slightly Muted Teal */
-    --primary-foreground: 220 20% 10%; /* Dark text on teal */
+    --primary: 180 65% 50%; /* Rich, Vibrant Teal */
+    --primary-foreground: 210 20% 98%; /* Very light text on teal */
     
-    --secondary: 210 60% 50%; /* Deep Saphire Blue for a sophisticated secondary touch */
-    --secondary-foreground: 210 10% 95%; 
+    --secondary: 210 50% 45%; /* Deep Sapphire Blue */
+    --secondary-foreground: 210 10% 96%; 
     
-    --muted: 220 15% 30%; /* Darker muted color */
-    --muted-foreground: 220 10% 70%; /* Lighter muted text */
+    --muted: 220 15% 25%; /* Darker muted color */
+    --muted-foreground: 220 10% 65%; /* Lighter muted text */
     
-    --accent: 190 80% 70%; /* Brighter, Luminous Cyan/Light Teal for "shine" */
-    --accent-foreground: 220 20% 10%;
+    --accent: 190 90% 65%; /* Bright, Luminous Cyan for "shine" */
+    --accent-foreground: 220 20% 8%; /* Dark text on accent */
     
-    --destructive: 0 60% 55%; /* Deep, Elegant Red */
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 270 50% 55%; /* Regal, Deep Purple for warnings */
+    --destructive-foreground: 270 10% 96%; /* Light text on purple */
     
-    --border: 220 15% 25%; /* Subtle border, slightly lighter than cards */
-    --input: 220 15% 18%; 
-    --ring: 190 75% 65%; /* Cyan/Teal for rings, matching accent hover */
+    --border: 220 15% 20%; /* Subtle border */
+    --input: 220 15% 15%; 
+    --ring: 190 85% 60%; /* Cyan/Teal for rings, matching accent hover */
     
-    --chart-1: 180 70% 55%; /* Teal */
-    --chart-2: 210 60% 50%; /* Saphire Blue */
-    --chart-3: 270 50% 60%; /* Regal Purple (example) */
-    --chart-4: 0 60% 55%;   /* Red */
-    --chart-5: 240 50% 65%; /* Medium-Dark Blue */
+    --chart-1: 180 65% 50%; /* Teal */
+    --chart-2: 210 50% 45%; /* Saphire Blue */
+    --chart-3: 270 50% 55%; /* Regal Purple */
+    --chart-4: 190 90% 65%; /* Luminous Cyan */
+    --chart-5: 240 40% 60%; /* Medium-Dark Blue */
 
     --radius: 0.5rem;
 
     /* Sidebar specific colors for dark theme */
-    --sidebar-background: 220 20% 12%; 
-    --sidebar-foreground: 210 30% 88%;
-    --sidebar-primary: 180 70% 60%; 
-    --sidebar-primary-foreground: 220 20% 12%;
-    --sidebar-accent: 190 60% 55%; 
-    --sidebar-accent-foreground: 220 10% 8%;
-    --sidebar-border: 220 15% 22%;
-    --sidebar-ring: 180 70% 55%; 
+    --sidebar-background: 220 20% 7%; 
+    --sidebar-foreground: 210 30% 90%;
+    --sidebar-primary: 180 65% 55%; 
+    --sidebar-primary-foreground: 220 20% 10%;
+    --sidebar-accent: 190 70% 60%; 
+    --sidebar-accent-foreground: 220 10% 10%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 180 65% 50%; 
   }
 
   .dark { 
-    /* Keeping dark theme as the primary, so these are the same */
-    --background: 220 20% 10%;
-    --foreground: 210 40% 95%;
+    /* Ensuring dark theme is primary */
+    --background: 220 20% 5%;
+    --foreground: 210 40% 96%;
     
-    --card: 220 20% 14%;
-    --card-foreground: 210 40% 95%;
+    --card: 220 20% 10%;
+    --card-foreground: 210 40% 96%;
     
-    --popover: 220 20% 8%;
-    --popover-foreground: 210 40% 95%;
+    --popover: 220 20% 4%;
+    --popover-foreground: 210 40% 96%;
     
-    --primary: 180 70% 55%;
-    --primary-foreground: 220 20% 10%;
+    --primary: 180 65% 50%;
+    --primary-foreground: 210 20% 98%;
     
-    --secondary: 210 60% 50%;
-    --secondary-foreground: 210 10% 95%;
+    --secondary: 210 50% 45%;
+    --secondary-foreground: 210 10% 96%;
     
-    --muted: 220 15% 30%;
-    --muted-foreground: 220 10% 70%;
+    --muted: 220 15% 25%;
+    --muted-foreground: 220 10% 65%;
     
-    --accent: 190 80% 70%;
-    --accent-foreground: 220 20% 10%;
+    --accent: 190 90% 65%;
+    --accent-foreground: 220 20% 8%;
     
-    --destructive: 0 60% 55%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 270 50% 55%;
+    --destructive-foreground: 270 10% 96%;
     
-    --border: 220 15% 25%;
-    --input: 220 15% 18%;
-    --ring: 190 75% 65%;
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 190 85% 60%;
     
-    --chart-1: 180 70% 55%;
-    --chart-2: 210 60% 50%;
-    --chart-3: 270 50% 60%;
-    --chart-4: 0 60% 55%;
-    --chart-5: 240 50% 65%;
+    --chart-1: 180 65% 50%;
+    --chart-2: 210 50% 45%;
+    --chart-3: 270 50% 55%;
+    --chart-4: 190 90% 65%;
+    --chart-5: 240 40% 60%;
 
-    --sidebar-background: 220 20% 12%;
-    --sidebar-foreground: 210 30% 88%;
-    --sidebar-primary: 180 70% 60%;
-    --sidebar-primary-foreground: 220 20% 12%;
-    --sidebar-accent: 190 60% 55%;
-    --sidebar-accent-foreground: 220 10% 8%;
-    --sidebar-border: 220 15% 22%;
-    --sidebar-ring: 180 70% 55%;
+    --sidebar-background: 220 20% 7%;
+    --sidebar-foreground: 210 30% 90%;
+    --sidebar-primary: 180 65% 55%;
+    --sidebar-primary-foreground: 220 20% 10%;
+    --sidebar-accent: 190 70% 60%;
+    --sidebar-accent-foreground: 220 10% 10%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 180 65% 50%;
   }
 }
 
@@ -111,19 +111,18 @@
   section {
     @apply py-8 md:py-12; 
   }
-  /* Force dark theme by default if preferred */
   html.dark body {
      @apply bg-background text-foreground;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply text-foreground; /* Ensuring headings use foreground color from the new theme */
+    @apply text-foreground; 
   }
 
   /* Enhanced heading styles for elegance */
-  h1 { @apply text-4xl font-bold tracking-tight sm:text-5xl; }
-  h2 { @apply text-3xl font-bold tracking-tight; }
-  h3 { @apply text-2xl font-semibold; }
+  h1 { @apply text-4xl font-bold tracking-tight sm:text-5xl text-primary; } /* Main site title in primary */
+  h2 { @apply text-3xl font-bold tracking-tight text-primary; } /* Section titles in primary */
+  h3 { @apply text-2xl font-semibold text-accent; } /* Sub-section or card titles in accent */
 
   /* Primary color for key text elements */
   .text-primary {
@@ -138,10 +137,20 @@
   .bg-accent {
     background-color: hsl(var(--accent));
   }
+  .text-destructive {
+    color: hsl(var(--destructive));
+  }
+  .bg-destructive {
+    background-color: hsl(var(--destructive));
+  }
+  .border-destructive {
+    border-color: hsl(var(--destructive));
+  }
+
 
   /* Improved link styling */
   a {
-    @apply text-primary hover:text-accent transition-colors duration-200;
+    @apply text-accent hover:text-primary transition-colors duration-200;
   }
 }
 
@@ -151,13 +160,13 @@
   height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(var(--background) / 0.7); 
+  background: hsl(var(--background) / 0.8); 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary) / 0.6); 
+  background: hsl(var(--primary) / 0.7); 
   border-radius: 10px;
-  border: 2px solid hsl(var(--background) / 0.7); 
+  border: 2px solid hsl(var(--background) / 0.8); 
 }
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--accent)); 
