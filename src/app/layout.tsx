@@ -14,12 +14,50 @@ const notoKufiArabic = Noto_Kufi_Arabic({
   display: 'swap',
 });
 
+const siteTitle = 'نَجَاتُكَ بِيَدِكَ - Garden of Remembrance';
+const siteDescription = 'موقع إسلامي شامل للأذكار والأدعية اليومية والفوائد الإسلامية. نجاتك بيدك نحو حياة أكثر طمأنينة وقرباً من الله.';
+// IMPORTANT: Replace 'https://your-actual-domain.com' with your site's deployed URL for Open Graph images to work correctly.
+const siteBaseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://your-actual-domain.com';
+
+
 export const metadata: Metadata = {
-  title: 'نَجَاتُكَ بِيَدِكَ - Garden of Remembrance',
-  description: 'موقع إسلامي شامل للأذكار والأدعية اليومية والفوائد الإسلامية. نجاتك بيدك نحو حياة أكثر طمأنينة وقرباً من الله.',
+  title: siteTitle,
+  description: siteDescription,
+  metadataBase: new URL(siteBaseUrl),
   verification: {
     google: "erc3DhRH1Zx4lamgfNDwou_YZxbsSIYgVBByQy9YDZA",
   },
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: '/', // Relative to metadataBase
+    siteName: 'نَجَاتُكَ بِيَدِكَ',
+    images: [
+      {
+        url: 'https://placehold.co/1200x630.png', // Standard Open Graph image size
+        width: 1200,
+        height: 630,
+        alt: 'نَجَاتُكَ بِيَدِكَ - صورة تعريفية للموقع',
+      },
+    ],
+    locale: 'ar_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteTitle,
+    description: siteDescription,
+    images: [`${siteBaseUrl}/og-image.png`], // Example: if you host your own image at public/og-image.png
+    // Using the placeholder for now, as hosting a specific image is beyond current scope.
+    // Replace the above with: images: ['https://placehold.co/1200x630.png'], if you prefer the placeholder
+  },
+  // It's good practice to also add a general manifest for PWA capabilities later
+  // manifest: '/manifest.json', 
+  // And icons for favicons, etc.
+  // icons: {
+  //   icon: '/favicon.ico',
+  //   apple: '/apple-touch-icon.png',
+  // },
 };
 
 export default function RootLayout({
