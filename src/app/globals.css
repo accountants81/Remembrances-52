@@ -5,98 +5,88 @@
 
 @layer base {
   :root {
-    /* Refined Dark Theme for Luxury & Shine */
-    --background: 220 20% 5%; /* Very Dark Blue, almost black */
-    --foreground: 210 40% 96%; /* Bright, clean light grey/white */
+    /* Refined Dark Theme for Luxury & Shine - Enhanced */
+    --background: 220 25% 6%; /* Slightly deeper dark blue */
+    --foreground: 210 45% 97%; /* Brighter, cleaner light grey/white */
     
-    --card: 220 20% 10%; /* Slightly Lighter Dark Blue for cards */
-    --card-foreground: 210 40% 96%;
+    --card: 220 25% 11%; /* Consistent Card Background */
+    --card-foreground: 210 45% 97%;
     
-    --popover: 220 20% 4%; /* Even darker for popovers */
-    --popover-foreground: 210 40% 96%;
+    --popover: 220 25% 5%; /* Darker for popovers */
+    --popover-foreground: 210 45% 97%;
     
-    --primary: 180 65% 50%; /* Rich, Vibrant Teal */
-    --primary-foreground: 210 20% 98%; /* Very light text on teal */
+    --primary: 180 70% 55%; /* More Vibrant & Luminous Teal */
+    --primary-foreground: 200 30% 10%; /* Darker text on vibrant teal for contrast */
     
-    --secondary: 210 50% 45%; /* Deep Sapphire Blue */
-    --secondary-foreground: 210 10% 96%; 
+    --secondary: 210 55% 50%; /* Richer Sapphire Blue */
+    --secondary-foreground: 210 15% 97%; 
     
-    --muted: 220 15% 25%; /* Darker muted color */
-    --muted-foreground: 220 10% 65%; /* Lighter muted text */
+    --muted: 220 20% 30%; /* Adjusted muted color */
+    --muted-foreground: 220 15% 70%; /* Lighter muted text */
     
-    --accent: 190 90% 65%; /* Bright, Luminous Cyan for "shine" */
-    --accent-foreground: 220 20% 8%; /* Dark text on accent */
+    --accent: 190 95% 70%; /* Brighter, More Luminous Cyan for "shine" */
+    --accent-foreground: 220 25% 8%; /* Dark text on accent */
     
-    --destructive: 0 70% 50%; /* Strong, Clear Red for warnings */
+    --destructive: 0 75% 55%; /* Strong, Clear Red for warnings */
     --destructive-foreground: 0 0% 100%; /* White text on red */
     
-    --border: 220 15% 20%; /* Subtle border */
-    --input: 220 15% 15%; 
-    --ring: 190 85% 60%; /* Cyan/Teal for rings, matching accent hover */
+    --border: 220 20% 25%; /* Slightly more visible subtle border */
+    --input: 220 20% 20%; 
+    --ring: 190 90% 65%; /* Cyan/Teal for rings, matching accent hover */
     
-    --chart-1: 180 65% 50%; /* Teal */
-    --chart-2: 210 50% 45%; /* Saphire Blue */
-    --chart-3: 0 70% 50%;   /* Red for destructive charts */
-    --chart-4: 190 90% 65%; /* Luminous Cyan */
-    --chart-5: 240 40% 60%; /* Medium-Dark Blue */
+    --chart-1: 180 70% 55%; /* Teal */
+    --chart-2: 210 55% 50%; /* Saphire Blue */
+    --chart-3: 0 75% 55%;   /* Red for destructive charts */
+    --chart-4: 190 95% 70%; /* Luminous Cyan */
+    --chart-5: 240 45% 65%; /* Medium-Dark Blue */
 
     --radius: 0.5rem;
 
     /* Sidebar specific colors for dark theme */
-    --sidebar-background: 220 20% 7%; 
-    --sidebar-foreground: 210 30% 90%;
-    --sidebar-primary: 180 65% 55%; 
-    --sidebar-primary-foreground: 220 20% 10%;
-    --sidebar-accent: 190 70% 60%; 
-    --sidebar-accent-foreground: 220 10% 10%;
-    --sidebar-border: 220 15% 18%;
-    --sidebar-ring: 180 65% 50%; 
+    --sidebar-background: 220 25% 8%; 
+    --sidebar-foreground: 210 35% 92%;
+    --sidebar-primary: 180 70% 60%; 
+    --sidebar-primary-foreground: 220 25% 12%;
+    --sidebar-accent: 190 75% 65%; 
+    --sidebar-accent-foreground: 220 15% 12%;
+    --sidebar-border: 220 20% 22%;
+    --sidebar-ring: 180 70% 55%; 
   }
 
   .dark { 
-    /* Ensuring dark theme is primary */
-    --background: 220 20% 5%;
-    --foreground: 210 40% 96%;
-    
-    --card: 220 20% 10%;
-    --card-foreground: 210 40% 96%;
-    
-    --popover: 220 20% 4%;
-    --popover-foreground: 210 40% 96%;
-    
-    --primary: 180 65% 50%;
-    --primary-foreground: 210 20% 98%;
-    
-    --secondary: 210 50% 45%;
-    --secondary-foreground: 210 10% 96%;
-    
-    --muted: 220 15% 25%;
-    --muted-foreground: 220 10% 65%;
-    
-    --accent: 190 90% 65%;
-    --accent-foreground: 220 20% 8%;
-    
-    --destructive: 0 70% 50%;
+    /* Ensuring dark theme is primary and matches above */
+    --background: 220 25% 6%;
+    --foreground: 210 45% 97%;
+    --card: 220 25% 11%;
+    --card-foreground: 210 45% 97%;
+    --popover: 220 25% 5%;
+    --popover-foreground: 210 45% 97%;
+    --primary: 180 70% 55%;
+    --primary-foreground: 200 30% 10%;
+    --secondary: 210 55% 50%;
+    --secondary-foreground: 210 15% 97%;
+    --muted: 220 20% 30%;
+    --muted-foreground: 220 15% 70%;
+    --accent: 190 95% 70%;
+    --accent-foreground: 220 25% 8%;
+    --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
-    
-    --border: 220 15% 20%;
-    --input: 220 15% 15%;
-    --ring: 190 85% 60%;
-    
-    --chart-1: 180 65% 50%;
-    --chart-2: 210 50% 45%;
-    --chart-3: 0 70% 50%;
-    --chart-4: 190 90% 65%;
-    --chart-5: 240 40% 60%;
-
-    --sidebar-background: 220 20% 7%;
-    --sidebar-foreground: 210 30% 90%;
-    --sidebar-primary: 180 65% 55%;
-    --sidebar-primary-foreground: 220 20% 10%;
-    --sidebar-accent: 190 70% 60%;
-    --sidebar-accent-foreground: 220 10% 10%;
-    --sidebar-border: 220 15% 18%;
-    --sidebar-ring: 180 65% 50%;
+    --border: 220 20% 25%;
+    --input: 220 20% 20%;
+    --ring: 190 90% 65%;
+    --chart-1: 180 70% 55%;
+    --chart-2: 210 55% 50%;
+    --chart-3: 0 75% 55%;
+    --chart-4: 190 95% 70%;
+    --chart-5: 240 45% 65%;
+    --sidebar-background: 220 25% 8%;
+    --sidebar-foreground: 210 35% 92%;
+    --sidebar-primary: 180 70% 60%;
+    --sidebar-primary-foreground: 220 25% 12%;
+    --sidebar-accent: 190 75% 65%;
+    --sidebar-accent-foreground: 220 15% 12%;
+    --sidebar-border: 220 20% 22%;
+    --sidebar-ring: 180 70% 55%;
   }
 }
 
@@ -107,6 +97,7 @@
   body {
     @apply bg-background text-foreground;
     direction: rtl; 
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smoother theme transitions */
   }
   section {
     @apply py-8 md:py-12; 
@@ -120,37 +111,20 @@
   }
 
   /* Enhanced heading styles for elegance */
-  h1 { @apply text-4xl font-bold tracking-tight sm:text-5xl text-primary; } /* Main site title in primary */
-  h2 { @apply text-3xl font-bold tracking-tight text-primary; } /* Section titles in primary */
-  h3 { @apply text-2xl font-semibold text-accent; } /* Sub-section or card titles in accent */
+  h1 { @apply text-4xl font-bold tracking-tight sm:text-5xl text-primary; } 
+  h2 { @apply text-3xl font-bold tracking-tight text-primary; } 
+  h3 { @apply text-2xl font-semibold text-accent; } 
 
-  /* Primary color for key text elements */
-  .text-primary {
-    color: hsl(var(--primary));
-  }
-  .bg-primary {
-    background-color: hsl(var(--primary));
-  }
-   .text-accent {
-    color: hsl(var(--accent));
-  }
-  .bg-accent {
-    background-color: hsl(var(--accent));
-  }
-  .text-destructive {
-    color: hsl(var(--destructive));
-  }
-  .bg-destructive {
-    background-color: hsl(var(--destructive));
-  }
-  .border-destructive {
-    border-color: hsl(var(--destructive));
-  }
+  .text-primary { color: hsl(var(--primary)); }
+  .bg-primary { background-color: hsl(var(--primary)); }
+  .text-accent { color: hsl(var(--accent)); }
+  .bg-accent { background-color: hsl(var(--accent)); }
+  .text-destructive { color: hsl(var(--destructive)); }
+  .bg-destructive { background-color: hsl(var(--destructive)); }
+  .border-destructive { border-color: hsl(var(--destructive)); }
 
-
-  /* Improved link styling */
   a {
-    @apply text-accent hover:text-primary transition-colors duration-200;
+    @apply text-accent hover:text-primary transition-colors duration-200 ease-in-out;
   }
 }
 
@@ -160,44 +134,52 @@
   height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(var(--background) / 0.8); 
+  background: hsl(var(--background) / 0.9); 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary) / 0.7); 
+  background: hsl(var(--primary) / 0.8); 
   border-radius: 10px;
-  border: 2px solid hsl(var(--background) / 0.8); 
+  border: 2px solid hsl(var(--background) / 0.9); 
 }
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--accent)); 
 }
 
-/* Ensure buttons and other interactive elements use the new primary/accent colors */
+/* Styling for section titles on category pages - Refined Underline */
+.category-page-title {
+  @apply text-3xl md:text-4xl font-bold text-primary relative pb-3 mb-1
+         after:content-[''] after:absolute after:right-0 rtl:after:left-0 rtl:after:right-auto after:bottom-0 
+         after:w-32 after:h-[2px] after:bg-gradient-to-r from-accent to-primary after:rounded-full;
+}
+
+/* Styling for main section titles - Refined Underline */
+.main-section-title {
+  @apply text-3xl font-bold text-center mb-10 text-primary relative pb-3
+         after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 
+         after:w-1/4 after:max-w-xs after:h-[2px] after:bg-gradient-to-r from-accent to-primary after:rounded-full;
+}
+
+/* Specifically for SinsWarning section title - Refined Underline */
+.sins-warning-title {
+   @apply text-3xl font-bold text-center mb-10 text-destructive relative pb-3
+          after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 
+          after:w-1/3 sm:after:w-1/2 md:after:w-1/3 lg:after:w-1/4 after:max-w-sm after:h-[2px] after:bg-destructive after:opacity-75 after:rounded-full;
+}
+
+/* Card general styling for consistency and elegance */
+.bg-card {
+  @apply rounded-lg border border-border text-card-foreground shadow-lg transition-all duration-300 ease-in-out;
+}
+.bg-card:hover {
+  @apply shadow-xl border-primary/50;
+}
+
+/* Button variants for consistency */
 .btn-primary {
   @apply bg-primary text-primary-foreground hover:bg-primary/90;
 }
 
 .btn-accent {
   @apply bg-accent text-accent-foreground hover:bg-accent/90;
-}
-
-/* Styling for section titles on category pages */
-.category-page-title {
-  @apply text-3xl md:text-4xl font-bold text-primary relative pb-2
-         after:content-[''] after:absolute after:right-0 rtl:after:left-0 rtl:after:right-auto after:bottom-0 
-         after:w-24 after:h-1 after:bg-accent after:rounded-full;
-}
-
-/* Styling for main section titles (like Daily Wisdom, Sins Warning) */
-.main-section-title {
-  @apply text-3xl font-bold text-center mb-8 text-primary relative pb-2
-         after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 
-         after:w-20 after:h-1 after:bg-accent after:rounded-full;
-}
-
-/* Specifically for SinsWarning section title to use destructive color */
-.sins-warning-title {
-   @apply text-3xl font-bold text-center mb-8 text-destructive relative pb-2
-          after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 
-          after:w-full sm:after:w-3/4 md:after:w-1/2 lg:after:w-1/3 after:max-w-xs after:h-1 after:bg-destructive after:rounded-full;
 }
