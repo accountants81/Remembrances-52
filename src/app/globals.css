@@ -27,8 +27,8 @@
     --accent: 190 90% 65%; /* Bright, Luminous Cyan for "shine" */
     --accent-foreground: 220 20% 8%; /* Dark text on accent */
     
-    --destructive: 270 50% 55%; /* Regal, Deep Purple for warnings */
-    --destructive-foreground: 270 10% 96%; /* Light text on purple */
+    --destructive: 0 70% 50%; /* Strong, Clear Red for warnings */
+    --destructive-foreground: 0 0% 100%; /* White text on red */
     
     --border: 220 15% 20%; /* Subtle border */
     --input: 220 15% 15%; 
@@ -36,7 +36,7 @@
     
     --chart-1: 180 65% 50%; /* Teal */
     --chart-2: 210 50% 45%; /* Saphire Blue */
-    --chart-3: 270 50% 55%; /* Regal Purple */
+    --chart-3: 0 70% 50%;   /* Red for destructive charts */
     --chart-4: 190 90% 65%; /* Luminous Cyan */
     --chart-5: 240 40% 60%; /* Medium-Dark Blue */
 
@@ -76,8 +76,8 @@
     --accent: 190 90% 65%;
     --accent-foreground: 220 20% 8%;
     
-    --destructive: 270 50% 55%;
-    --destructive-foreground: 270 10% 96%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
     
     --border: 220 15% 20%;
     --input: 220 15% 15%;
@@ -85,7 +85,7 @@
     
     --chart-1: 180 65% 50%;
     --chart-2: 210 50% 45%;
-    --chart-3: 270 50% 55%;
+    --chart-3: 0 70% 50%;
     --chart-4: 190 90% 65%;
     --chart-5: 240 40% 60%;
 
@@ -180,3 +180,4 @@
 .btn-accent {
   @apply bg-accent text-accent-foreground hover:bg-accent/90;
 }
+
