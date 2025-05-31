@@ -1,5 +1,3 @@
-# Firebase Studio
-
-This is a NextJS starter in Firebase Studio.
-
-To get started, take a look at src/app/page.tsx.
+# Remembrances - موقع الذكريات  
+![Preview](https://remembrances-1.vercel.app/preview.jpg)  
+شارك ذكرياتك مع من تحب!
