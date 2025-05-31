@@ -1,3 +1,2 @@
-# Remembrances - موقع الذكريات  
-![Preview](https://remembrances-1.vercel.app/preview.jpg)  
+wget https://defense-arab.com/vb/attachments/670328/ -O public/preview.jpg 
 شارك ذكرياتك مع من تحب!
